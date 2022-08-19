@@ -1,0 +1,141 @@
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _german is assumed
+
+Coq < _koreans is assumed
+
+Coq < _like is assumed
+
+Coq < _tea is assumed
+
+Coq < Toplevel input, characters 13-135:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (_koreans x) (exists z1, (and (and (_tea z1) True) (_like x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (_german x) (exists z1, (and (and (_tea z1) True) (_like x z1)))) (F1 x)) (F2 x)))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F2 : Entity -> Prop =>
+exists x : Entity,
+((_koreans x /\ (exists z1 : Entity, (_tea z1 /\ True) /\ _like x z1)) /\
+F1 x) /\ F2 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+
+Error: Unknown command of the non proof-editing mode.
+
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _german is assumed
+
+Coq < _koreans is assumed
+
+Coq < _like is assumed
+
+Coq < _tea is assumed
+
+Coq < Toplevel input, characters 13-135:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (_koreans x) (exists z1, (and (and (_tea z1) True) (_like x z1)))) (F1 x)) (F2 x)))) -> (not (fun F1 F2 => (exists x, (and (and (and (_german x) (exists z1, (and (and (_tea z1) True) (_like x z1)))) (F1 x)) (F2 x))))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F2 : Entity -> Prop =>
+exists x : Entity,
+((_koreans x /\ (exists z1 : Entity, (_tea z1 /\ True) /\ _like x z1)) /\
+F1 x) /\ F2 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+
+Error: Unknown command of the non proof-editing mode.
+
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _german is assumed
+
+Coq < _koreans is assumed
+
+Coq < _like is assumed
+
+Coq < _tea is assumed
+
+Coq < Toplevel input, characters 13-135:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (_koreans x) (exists z1, (and (and (_tea z1) True) (_like x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (_german x) (exists z1, (and (and (_tea z1) True) (_like x z1)))) (F1 x)) (F2 x)))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F2 : Entity -> Prop =>
+exists x : Entity,
+((_koreans x /\ (exists z1 : Entity, (_tea z1 /\ True) /\ _like x z1)) /\
+F1 x) /\ F2 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _german is assumed
+
+Coq < _koreans is assumed
+
+Coq < _like is assumed
+
+Coq < _tea is assumed
+
+Coq < Toplevel input, characters 13-135:
+> Theorem t1: (fun F1 F2 => (exists x, (and (and (and (_koreans x) (exists z1, (and (and (_tea z1) True) (_like x z1)))) (F1 x)) (F2 x)))) -> (not (fun F1 F2 => (exists x, (and (and (and (_german x) (exists z1, (and (and (_tea z1) True) (_like x z1)))) (F1 x)) (F2 x))))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun F1 F2 : Entity -> Prop =>
+exists x : Entity,
+((_koreans x /\ (exists z1 : Entity, (_tea z1 /\ True) /\ _like x z1)) /\
+F1 x) /\ F2 x" has type "(Entity -> Prop) -> (Entity -> Prop) -> Prop"
+which should be Set, Prop or Type.
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+unknown
+
+=============================
+Analysis:
+
+The correct answer WOULD be unknown, but I am unsure if it shows unknown for the right purposes. 
+
+LHS:
+(fun F1 F2 => (exists x, (and (and (and (_koreans x) (exists z1, (and (and (_tea z1) True) (_like x z1)))) (F1 x)) (F2 x))))
+
+RHS:
+(fun F1 F2 => (exists x, (and (and (and (_german x) (exists z1, (and (and (_tea z1) True) (_like x z1)))) (F1 x)) (F2 x))))
+
+
+
+
+

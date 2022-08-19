@@ -1,0 +1,178 @@
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _hungry is assumed
+
+Coq < _woman is assumed
+
+Coq < 1 subgoal
+
+============================
+(forall x : Entity, _woman x -> True -> _hungry x) ->
+(forall x : Entity, _woman x -> True -> _hungry x) ->
+exists x : Entity, (_woman x /\ True) /\ _hungry x
+
+
+1 subgoal
+
+============================
+(forall x : Entity, _woman x -> True -> _hungry x) ->
+(forall x : Entity, _woman x -> True -> _hungry x) ->
+exists x : Entity, (_woman x /\ True) /\ _hungry x
+
+
+1 subgoal
+
+============================
+(forall x : Entity, _woman x -> True -> _hungry x) ->
+(forall x : Entity, _woman x -> True -> _hungry x) ->
+exists x : Entity, (_woman x /\ True) /\ _hungry x
+
+nltac.
+nltac.
+<Your Tactic Text here>
+Error: Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _hungry is assumed
+
+Coq < _woman is assumed
+
+Coq < 1 subgoal
+
+============================
+(forall x : Entity, _woman x -> True -> _hungry x) ->
+(forall x : Entity, _woman x -> True -> _hungry x) ->
+~ (exists x : Entity, (_woman x /\ True) /\ _hungry x)
+
+
+1 subgoal
+
+============================
+(forall x : Entity, _woman x -> True -> _hungry x) ->
+(forall x : Entity, _woman x -> True -> _hungry x) ->
+~ (exists x : Entity, (_woman x /\ True) /\ _hungry x)
+
+
+1 subgoal
+
+============================
+(forall x : Entity, _woman x -> True -> _hungry x) ->
+(forall x : Entity, _woman x -> True -> _hungry x) ->
+~ (exists x : Entity, (_woman x /\ True) /\ _hungry x)
+
+nltac.
+nltac.
+<Your Tactic Text here>
+Error: Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _hungry is assumed
+
+Coq < _woman is assumed
+
+Coq < 1 subgoal
+
+============================
+(forall x : Entity, _woman x -> True -> _hungry x) ->
+(forall x : Entity, _woman x -> True -> _hungry x) ->
+exists x : Entity, (_woman x /\ True) /\ _hungry x
+
+2 subgoals
+
+H : forall x : Entity, _woman x -> True -> _hungry x
+H0 : forall x : Entity, _woman x -> True -> _hungry x
+============================
+_woman ?19
+
+subgoal 2 is:
+_hungry ?19
+
+2 subgoals
+
+H : forall x : Entity, _woman x -> True -> _hungry x
+H0 : forall x : Entity, _woman x -> True -> _hungry x
+============================
+_woman ?19
+
+subgoal 2 is:
+_hungry ?19
+
+repeat nltac_base.
+try substitution.
+<Your Tactic Text here>
+<Your Tactic Text here>
+Error: Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _hungry is assumed
+
+Coq < _woman is assumed
+
+Coq < 1 subgoal
+
+============================
+(forall x : Entity, _woman x -> True -> _hungry x) ->
+(forall x : Entity, _woman x -> True -> _hungry x) ->
+~ (exists x : Entity, (_woman x /\ True) /\ _hungry x)
+
+1 subgoal
+
+H : forall x : Entity, _woman x -> True -> _hungry x
+H0 : forall x : Entity, _woman x -> True -> _hungry x
+x : Entity
+H2 : _hungry x
+H1 : _woman x
+H3 : True
+============================
+False
+
+1 subgoal
+
+H : forall x : Entity, _woman x -> True -> _hungry x
+H0 : forall x : Entity, _woman x -> True -> _hungry x
+x : Entity
+H2 : _hungry x
+H1 : _woman x
+H3 : True
+============================
+False
+
+repeat nltac_base.
+try substitution.
+<Your Tactic Text here>
+Error: Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined
+unknown
+============================
+Analysis:
+This tested what I will call 'universal2existential' in which forall(x) --> exists(x).
+Though this is a tautology, this inference framework believes that the result is unknown.
+That is, this is a clear limitation of this inference framework.
+
+This test was given the following input:
+All women are hungry.
+Some women are hungry.
+
+And, just to make sure, it was given the following input as well:
+All women are hungry.
+All women are hungry.
+Some women are hungry.

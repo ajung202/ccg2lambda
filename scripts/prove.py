@@ -181,4 +181,5 @@ def prove_doc_ind(document_ind):
     return etree.tostring(proof_node)
 
 if __name__ == '__main__':
+    sys.stdout = open('tempeh.txt', 'wt')
     main()

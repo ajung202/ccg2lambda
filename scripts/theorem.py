@@ -338,8 +338,10 @@ def negate_conclusion(conclusion):
 # In that case, we return True. Otherwise, we return False.
 def is_theorem_defined(output_lines):
     for output_line in output_lines:
+        print(output_line)
         if len(output_line) > 2 and 'is defined' in output_line:
             return True
+    print("Theorem is not defined")
     return False
 
 def is_theorem_error(output_lines):

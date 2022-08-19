@@ -1,0 +1,121 @@
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _british is assumed
+
+Coq < _great is assumed
+
+Coq < _several is assumed
+
+Coq < _tenor is assumed
+
+Coq < Toplevel input, characters 114-116:
+> Theorem t1: (exists x, (and (and (and (and (_several x) (_great x)) (_tenor x)) True) (_british x))) -> (exists x z2, (and (and (and (and (_great z2) (_tenor z2)) (_british z2)) True) (x = z2))).
+>                                                                                                                   ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+
+Error: Unknown command of the non proof-editing mode.
+
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _british is assumed
+
+Coq < _great is assumed
+
+Coq < _several is assumed
+
+Coq < _tenor is assumed
+
+Coq < Toplevel input, characters 119-121:
+> Theorem t1: (exists x, (and (and (and (and (_several x) (_great x)) (_tenor x)) True) (_british x))) -> (not (exists x z2, (and (and (and (and (_great z2) (_tenor z2)) (_british z2)) True) (x = z2)))).
+>                                                                                                                        ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+
+Error: Unknown command of the non proof-editing mode.
+
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _british is assumed
+
+Coq < _great is assumed
+
+Coq < _several is assumed
+
+Coq < _tenor is assumed
+
+Coq < Toplevel input, characters 114-116:
+> Theorem t1: (exists x, (and (and (and (and (_several x) (_great x)) (_tenor x)) True) (_british x))) -> (exists x z2, (and (and (and (and (_great z2) (_tenor z2)) (_british z2)) True) (x = z2))).
+>                                                                                                                   ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _british is assumed
+
+Coq < _great is assumed
+
+Coq < _several is assumed
+
+Coq < _tenor is assumed
+
+Coq < Toplevel input, characters 119-121:
+> Theorem t1: (exists x, (and (and (and (and (_several x) (_great x)) (_tenor x)) True) (_british x))) -> (not (exists x z2, (and (and (and (and (_great z2) (_tenor z2)) (_british z2)) True) (x = z2)))).
+>                                                                                                                        ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+unknown
+
+============================
+This test case is supposed to test some(x) --> are(x).
+
+This test case used the follwing input:
+Several great tenors are British.
+---------------------------------------
+There are great tenors who are British.
+
+The LHS has the following parsing:
+(exists x, (and (and (and (and (_several x) (_great x)) (_tenor x)) True) (_british x)))
+
+The RHS has the following parsing:
+(exists x z2, (and (and (and (and (_great z2) (_tenor z2)) (_british z2)) True) (x = z2)))
+
+The parsings look fine.

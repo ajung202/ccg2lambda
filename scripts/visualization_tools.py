@@ -15,6 +15,7 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
+import html
 import cgi
 import re
 import sys
@@ -49,7 +50,7 @@ def get_fraction_mathml(numerator, denominator, line_thickness = 3,
                + "  <mrow>" + denominator + "</mrow>\n" \
                + "</mfrac>\n"
     if rule:
-        mathml_str = "<mrow><mo>" + cgi.escape(rule) + "</mo>" + mathml_str + "</mrow>"
+        mathml_str = "<mrow><mo>" + html.escape(rule) + "</mo>" + mathml_str + "</mrow>"
     return mathml_str
 
 def get_category_mathml(category):
@@ -101,7 +102,7 @@ def get_semantics_mathml(semantics):
     return "<mtext " \
            + " fontsize='" + str(kOtherSize) + "'" \
            + " color='" + kSemanticsColor + "'>" \
-           + cgi.escape(semantics) \
+           + html.escape(semantics) \
            + "</mtext>\n"
 
 def convert_node_to_mathml(ccg_node, sem_tree, tokens):
@@ -309,4 +310,4 @@ def convert_doc_to_mathml_(doc, verbatim_strings = [], use_gold_trees=False):
   </body>
   </html>
   """
-    return cgi.escape(html_str)
+    return html.escape(html_str)

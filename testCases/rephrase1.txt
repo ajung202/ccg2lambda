@@ -1,0 +1,128 @@
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _an is assumed
+
+Coq < _become is assumed
+
+Coq < _greatest is assumed
+
+Coq < _italian is assumed
+
+Coq < _tenor is assumed
+
+Coq < _world is assumed
+
+Coq < Toplevel input, characters 219-221:
+> Theorem t1: (True (fun x => (and (_an x) (_italian x))) (fun x => (exists z3, (and (and (and (and (exists z2, (and (and (_world z2) True) (Rel z3 z2))) (_greatest z3)) (_tenor z3)) True) (_become x z3))))) -> (exists x z4, (and (and (and (_italian z4) (exists z2, (and (and (and (and (exists z1, (and (and (_world z1) True) (Rel z2 z1))) (_greatest z2)) (_tenor z2)) True) (_become z4 z2)))) True) (x = z4))).
+>                                                                                                                                                                                                                            ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+
+Error: Unknown command of the non proof-editing mode.
+
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _an is assumed
+
+Coq < _become is assumed
+
+Coq < _greatest is assumed
+
+Coq < _italian is assumed
+
+Coq < _tenor is assumed
+
+Coq < _world is assumed
+
+Coq < Toplevel input, characters 224-226:
+> Theorem t1: (True (fun x => (and (_an x) (_italian x))) (fun x => (exists z3, (and (and (and (and (exists z2, (and (and (_world z2) True) (Rel z3 z2))) (_greatest z3)) (_tenor z3)) True) (_become x z3))))) -> (not (exists x z4, (and (and (and (_italian z4) (exists z2, (and (and (and (and (exists z1, (and (and (_world z1) True) (Rel z2 z1))) (_greatest z2)) (_tenor z2)) True) (_become z4 z2)))) True) (x = z4)))).
+>                                                                                                                                                                                                                                 ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+
+Error: Unknown command of the non proof-editing mode.
+
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _an is assumed
+
+Coq < _become is assumed
+
+Coq < _greatest is assumed
+
+Coq < _italian is assumed
+
+Coq < _tenor is assumed
+
+Coq < _world is assumed
+
+Coq < Toplevel input, characters 219-221:
+> Theorem t1: (True (fun x => (and (_an x) (_italian x))) (fun x => (exists z3, (and (and (and (and (exists z2, (and (and (_world z2) True) (Rel z3 z2))) (_greatest z3)) (_tenor z3)) True) (_become x z3))))) -> (exists x z4, (and (and (and (_italian z4) (exists z2, (and (and (and (and (exists z1, (and (and (_world z1) True) (Rel z2 z1))) (_greatest z2)) (_tenor z2)) True) (_become z4 z2)))) True) (x = z4))).
+>                                                                                                                                                                                                                            ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _an is assumed
+
+Coq < _become is assumed
+
+Coq < _greatest is assumed
+
+Coq < _italian is assumed
+
+Coq < _tenor is assumed
+
+Coq < _world is assumed
+
+Coq < Toplevel input, characters 224-226:
+> Theorem t1: (True (fun x => (and (_an x) (_italian x))) (fun x => (exists z3, (and (and (and (and (exists z2, (and (and (_world z2) True) (Rel z3 z2))) (_greatest z3)) (_tenor z3)) True) (_become x z3))))) -> (not (exists x z4, (and (and (and (_italian z4) (exists z2, (and (and (and (and (exists z1, (and (and (_world z1) True) (Rel z2 z1))) (_greatest z2)) (_tenor z2)) True) (_become z4 z2)))) True) (x = z4)))).
+>                                                                                                                                                                                                                                 ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+unknown
+============================
+This test asesses how the logical framework handles paraphrases of the original sentence.
+This was FraCaS-001.
+
+The input given was:
+An Italian became the world's greatest tenor.
+There was an Italian who became the world's greatest tenor.

@@ -1,0 +1,105 @@
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _runner is assumed
+
+Coq < _slow is assumed
+
+Coq < Toplevel input, characters 80-82:
+> Theorem t1: (forall x, ((_runner x) -> (True -> (not (_slow x))))) -> (exists x z2, (and (and (and (_runner z2) (_slow z2)) True) (x = z2))).
+>                                                                                 ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+
+Error: Unknown command of the non proof-editing mode.
+
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _runner is assumed
+
+Coq < _slow is assumed
+
+Coq < Toplevel input, characters 85-87:
+> Theorem t1: (forall x, ((_runner x) -> (True -> (not (_slow x))))) -> (not (exists x z2, (and (and (and (_runner z2) (_slow z2)) True) (x = z2)))).
+>                                                                                      ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+
+Error: Unknown command of the non proof-editing mode.
+
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _runner is assumed
+
+Coq < _slow is assumed
+
+Coq < Toplevel input, characters 80-82:
+> Theorem t1: (forall x, ((_runner x) -> (True -> (not (_slow x))))) -> (exists x z2, (and (and (and (_runner z2) (_slow z2)) True) (x = z2))).
+>                                                                                 ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _runner is assumed
+
+Coq < _slow is assumed
+
+Coq < Toplevel input, characters 85-87:
+> Theorem t1: (forall x, ((_runner x) -> (True -> (not (_slow x))))) -> (not (exists x z2, (and (and (and (_runner z2) (_slow z2)) True) (x = z2)))).
+>                                                                                      ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+unknown
+
+
+============================
+This tested a ~A --> A contradiction. This yields unknown, which is suspiciously poor. A lot of other rudimentary tests are yielding incorrect results.
+
+This test case was provided the following input:
+No runner is slow.
+------------------------------
+There are runners who are slow.
+
+The premise is represented as....
+(forall x, ((_runner x) -> (True -> (not (_slow x)))))
+whereas the right hand side is represented as....
+(not (exists x z2, (and (and (and (_runner z2) (_slow z2)) True) (x = z2))))
+
+One promising thing is that the first order logic translations seem to be working fine. This can be observed from the fact that conditionals are implemented with the universal quantifier whereas the conjunction is implemented with the existential quantifier.

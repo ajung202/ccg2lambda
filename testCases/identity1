@@ -1,0 +1,76 @@
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _coffee is assumed
+
+Coq < _order is assumed
+
+Coq < _tea is assumed
+
+Coq < _woman is assumed
+
+Coq < 1 subgoal
+
+============================
+(forall x : Entity,
+_woman x ->
+True ->
+exists z1 : Entity, ((_tea z1 \/ _coffee z1) /\ True) /\ _order x z1) ->
+(exists x : Entity,
+(_woman x /\ True) /\
+(exists z1 : Entity, (_coffee z1 /\ True) /\ _order x z1)) ->
+exists x : Entity,
+(_woman x /\ True) /\
+(exists z1 : Entity, (_coffee z1 /\ True) /\ _order x z1)
+
+
+Proof completed.
+
+
+Error: No such subgoal
+
+nltac.
+
+t1 is defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _coffee is assumed
+
+Coq < _order is assumed
+
+Coq < _tea is assumed
+
+Coq < _woman is assumed
+
+Coq < 1 subgoal
+
+============================
+(forall x : Entity,
+_woman x ->
+True ->
+exists z1 : Entity, ((_tea z1 \/ _coffee z1) /\ True) /\ _order x z1) ->
+(exists x : Entity,
+(_woman x /\ True) /\
+(exists z1 : Entity, (_coffee z1 /\ True) /\ _order x z1)) ->
+exists x : Entity,
+(_woman x /\ True) /\
+(exists z1 : Entity, (_coffee z1 /\ True) /\ _order x z1)
+
+Proof completed.
+
+Error: No such subgoal
+
+repeat nltac_base.
+
+t1 is defined
+yes
+
+============================
+This tested what I will call 'identity' in which the conclusion is in the premise verbadem.
+This test passed with the following input:
+
+All women ordered coffee or tea.
+Some women ordered coffee.
+--------------------------------
+Some women ordered coffee.

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="candc.xml"?>
+
+<candc>
+<ccg>
+ <rule type="rp" cat="NP">
+  <rule type="ba" cat="NP">
+   <rule type="lex" cat="NP">
+    <lf start="0" span="1" word="Koreans" lemma="Koreans" pos="NNPS" chunk="I-NP" entity="O" cat="N" />
+   </rule>
+   <rule type="fa" cat="NP\NP">
+    <lf start="1" span="1" word="like" lemma="like" pos="IN" chunk="I-PP" entity="O" cat="(NP\NP)/NP" />
+    <rule type="lex" cat="NP">
+     <lf start="2" span="1" word="tea" lemma="tea" pos="NN" chunk="I-NP" entity="O" cat="N" />
+    </rule>
+   </rule>
+  </rule>
+  <lf start="3" span="1" word="." lemma="." pos="." chunk="O" entity="O" cat="." />
+ </rule>
+</ccg>
+<deps>
+<![CDATA[
+]]></deps>
+<ccg>
+ <rule type="rp" cat="NP">
+  <rule type="ba" cat="NP">
+   <rule type="lex" cat="NP">
+    <lf start="0" span="1" word="Germans" lemma="german" pos="NNS" chunk="I-NP" entity="O" cat="N" />
+   </rule>
+   <rule type="fa" cat="NP\NP">
+    <lf start="1" span="1" word="like" lemma="like" pos="IN" chunk="I-PP" entity="O" cat="(NP\NP)/NP" />
+    <rule type="lex" cat="NP">
+     <lf start="2" span="1" word="tea" lemma="tea" pos="NN" chunk="I-NP" entity="O" cat="N" />
+    </rule>
+   </rule>
+  </rule>
+  <lf start="3" span="1" word="." lemma="." pos="." chunk="O" entity="O" cat="." />
+ </rule>
+</ccg>
+<deps>
+<![CDATA[
+]]></deps>
+</candc>

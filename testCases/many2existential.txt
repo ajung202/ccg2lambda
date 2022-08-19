@@ -1,0 +1,122 @@
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _eat is assumed
+
+Coq < _kimchi is assumed
+
+Coq < _koreans is assumed
+
+Coq < _many is assumed
+
+Coq < Toplevel input, characters 145-147:
+> Theorem t1: (exists x, (and (and (and (_many x) (_koreans x)) True) (exists z1, (and (and (z1 = _kimchi) True) (_eat x _kimchi))))) -> (exists x z3, (and (and (and (_koreans z3) (exists z1, (and (and (z1 = _kimchi) True) (_eat z3 _kimchi)))) True) (x = z3))).
+>                                                                                                                                                  ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+
+Error: Unknown command of the non proof-editing mode.
+
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _eat is assumed
+
+Coq < _kimchi is assumed
+
+Coq < _koreans is assumed
+
+Coq < _many is assumed
+
+Coq < Toplevel input, characters 150-152:
+> Theorem t1: (exists x, (and (and (and (_many x) (_koreans x)) True) (exists z1, (and (and (z1 = _kimchi) True) (_eat x _kimchi))))) -> (not (exists x z3, (and (and (and (_koreans z3) (exists z1, (and (and (z1 = _kimchi) True) (_eat z3 _kimchi)))) True) (x = z3)))).
+>                                                                                                                                                       ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+
+Error: Unknown command of the non proof-editing mode.
+
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _eat is assumed
+
+Coq < _kimchi is assumed
+
+Coq < _koreans is assumed
+
+Coq < _many is assumed
+
+Coq < Toplevel input, characters 145-147:
+> Theorem t1: (exists x, (and (and (and (_many x) (_koreans x)) True) (exists z1, (and (and (z1 = _kimchi) True) (_eat x _kimchi))))) -> (exists x z3, (and (and (and (_koreans z3) (exists z1, (and (and (z1 = _kimchi) True) (_eat z3 _kimchi)))) True) (x = z3))).
+>                                                                                                                                                  ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _eat is assumed
+
+Coq < _kimchi is assumed
+
+Coq < _koreans is assumed
+
+Coq < _many is assumed
+
+Coq < Toplevel input, characters 150-152:
+> Theorem t1: (exists x, (and (and (and (_many x) (_koreans x)) True) (exists z1, (and (and (z1 = _kimchi) True) (_eat x _kimchi))))) -> (not (exists x z3, (and (and (and (_koreans z3) (exists z1, (and (and (z1 = _kimchi) True) (_eat z3 _kimchi)))) True) (x = z3)))).
+>                                                                                                                                                       ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+unknown
+============================
+This tests if many(A) --> exists(A) is part of this logical framework. Unforuntaley, this logical system says that it isn't sure.
+
+The input used:
+Many Koreans eat Kimchi.
+--------------------------------
+There are Koreans who eat Kimchi.
+
+
+Premise:
+(exists x, (and (and (and (_many x) (_koreans x)) True) (exists z1, (and (and (z1 = _kimchi) True) (_eat x _kimchi)))))
+
+Conclusion:
+exists x z3, (and (and (and (_koreans z3) (exists z1, (and (and (z1 = _kimchi) True) (_eat z3 _kimchi)))) True) (x = z3)))
+
+It is interesting to see that the parsing seems pretty good. It simply seems that the logical framework implemented with Coq is underperforming.
+
