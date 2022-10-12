@@ -3,6 +3,21 @@
 This is a tool to derive formal semantic representations of
 natural language sentences given CCG derivation trees and semantic templates.
 
+## Preliminary Comments
+
+This is a fork of ```https://github.com/mynlp/ccg2lambda```
+
+It contains a newer, working version of Boxer and C&C, found in Valerio Basile's learningbyreading. Here is the link to the repository: ```https://github.com/valeriobasile/learningbyreading```
+
+These are the changes to the Python code:
+1) In ccg2lambda/scripts/semantic_index.py, the yaml loader needs an additional argument as such. Modify from ``` yaml.load(infile)``` to ```yaml.load(infile, Loader = yaml.FullLoader)```
+2) In ccg2lambda/scripts/utils.py, ```time.clock()``` needs to be changed to ```time.perf_counter()```
+3) In ccg2lambda/scripts/visualization_tools.py, add ```import html``` above ```import cgi```
+4) In ccg2lambda/scripts/visualization_tools.py, replace the three instances of ```cgi.escape(...)``` with ```htmi.escape(...)```
+
+To preface, this will make more sense if you read the section on using the semantic parser. After tokenizing the input, you need to have C&C / candc. I had better luck following the alternative instructions. As you can see in my ccg2lambda/executeAll.sh, my pathname on my machine to C&C is ```/home/alex/Desktop/Daniel/learningbyreading/ext/candc/bin/candc```
+
+
 ## Installation
 
 In order to run most part of this software, it is necessary to install python3,
