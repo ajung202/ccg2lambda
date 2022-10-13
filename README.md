@@ -21,6 +21,8 @@ This only seems to work on Linux operating systems. In order to make it work, on
 
 ## Added Execution File
 
+Before running this, you must execute ```eval $(opam env)``` every time after restarting the terminal or the computer.
+
 An easy way to run the system is to mimic the ```ccg2lambda/executeAll.sh```. Line 1 takes in input from the terminal to be used as the filename for the result. Line 2 tokenizes the setnece from ```sample_en.txt``` and saves it into ```en/sentences.tok```. Lines 3-6 have explanations given in the Using the Semantic Parser section of the ReadMe. Line 7 copies the result from ```tempeh.txt```, which was written by the python script ```ccg2lambda/scripts/prove.py``` onto the file allocated in Line 1.
 
 
