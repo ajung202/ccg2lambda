@@ -1,0 +1,198 @@
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _america is assumed
+
+Coq < _american is assumed
+
+Coq < _contient is assumed
+
+Coq < _drink is assumed
+
+Coq < _drink_e2 is assumed
+
+Coq < _drink_e3 is assumed
+
+Coq < _mexican is assumed
+
+Coq < _north is assumed
+
+Coq < _of is assumed
+
+Coq < _resident is assumed
+
+Coq < _tea is assumed
+
+Coq < Toplevel input, characters 13-191:
+> Theorem t1: (fun F1 F3 => (forall x, ((_resident x) -> ((and (exists z1, (and (and (and (and (and (_north z1) (_america z1)) (_drink_e2 z1)) (_tea z1)) True) (_of x z1))) (F1 x)) -> (F3 x))))) -> (forall x, ((and (_mexican x) (_resident x)) -> (True -> (exists z2, (and (and (and (_resident z2) (exists z1, (and (and (and (and (_north z1) (_american z1)) (_contient z1)) True) (_of z2 z1)))) True) (x = z2)))))) -> (forall x, ((and (_mexican x) (_resident x)) -> (True -> (exists z1, (and (and (_tea z1) True) (_drink_e3 x z1)))))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun (F1 : Entity -> Prop) (F3 : Entity -> Type) =>
+forall x : Entity,
+_resident x ->
+(exists z1 : Entity,
+((((_north z1 /\ _america z1) /\ _drink_e2 z1) /\ _tea z1) /\ True) /\
+_of x z1) /\ F1 x -> F3 x" has type
+"(Entity -> Prop) -> (Entity -> Type) -> Type"
+which should be Set, Prop or Type.
+
+
+Error: Unknown command of the non proof-editing mode.
+
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _america is assumed
+
+Coq < _american is assumed
+
+Coq < _contient is assumed
+
+Coq < _drink is assumed
+
+Coq < _drink_e2 is assumed
+
+Coq < _drink_e3 is assumed
+
+Coq < _mexican is assumed
+
+Coq < _north is assumed
+
+Coq < _of is assumed
+
+Coq < _resident is assumed
+
+Coq < _tea is assumed
+
+Coq < Toplevel input, characters 13-191:
+> Theorem t1: (fun F1 F3 => (forall x, ((_resident x) -> ((and (exists z1, (and (and (and (and (and (_north z1) (_america z1)) (_drink_e2 z1)) (_tea z1)) True) (_of x z1))) (F1 x)) -> (F3 x))))) -> (forall x, ((and (_mexican x) (_resident x)) -> (True -> (exists z2, (and (and (and (_resident z2) (exists z1, (and (and (and (and (_north z1) (_american z1)) (_contient z1)) True) (_of z2 z1)))) True) (x = z2)))))) -> (not (forall x, ((and (_mexican x) (_resident x)) -> (True -> (exists z1, (and (and (_tea z1) True) (_drink_e3 x z1))))))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun (F1 : Entity -> Prop) (F3 : Entity -> Type) =>
+forall x : Entity,
+_resident x ->
+(exists z1 : Entity,
+((((_north z1 /\ _america z1) /\ _drink_e2 z1) /\ _tea z1) /\ True) /\
+_of x z1) /\ F1 x -> F3 x" has type
+"(Entity -> Prop) -> (Entity -> Type) -> Type"
+which should be Set, Prop or Type.
+
+
+Error: Unknown command of the non proof-editing mode.
+
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _america is assumed
+
+Coq < _american is assumed
+
+Coq < _contient is assumed
+
+Coq < _drink is assumed
+
+Coq < _drink_e2 is assumed
+
+Coq < _drink_e3 is assumed
+
+Coq < _mexican is assumed
+
+Coq < _north is assumed
+
+Coq < _of is assumed
+
+Coq < _resident is assumed
+
+Coq < _tea is assumed
+
+Coq < Toplevel input, characters 13-191:
+> Theorem t1: (fun F1 F3 => (forall x, ((_resident x) -> ((and (exists z1, (and (and (and (and (and (_north z1) (_america z1)) (_drink_e2 z1)) (_tea z1)) True) (_of x z1))) (F1 x)) -> (F3 x))))) -> (forall x, ((and (_mexican x) (_resident x)) -> (True -> (exists z2, (and (and (and (_resident z2) (exists z1, (and (and (and (and (_north z1) (_american z1)) (_contient z1)) True) (_of z2 z1)))) True) (x = z2)))))) -> (forall x, ((and (_mexican x) (_resident x)) -> (True -> (exists z1, (and (and (_tea z1) True) (_drink_e3 x z1)))))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun (F1 : Entity -> Prop) (F3 : Entity -> Type) =>
+forall x : Entity,
+_resident x ->
+(exists z1 : Entity,
+((((_north z1 /\ _america z1) /\ _drink_e2 z1) /\ _tea z1) /\ True) /\
+_of x z1) /\ F1 x -> F3 x" has type
+"(Entity -> Prop) -> (Entity -> Type) -> Type"
+which should be Set, Prop or Type.
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _america is assumed
+
+Coq < _american is assumed
+
+Coq < _contient is assumed
+
+Coq < _drink is assumed
+
+Coq < _drink_e2 is assumed
+
+Coq < _drink_e3 is assumed
+
+Coq < _mexican is assumed
+
+Coq < _north is assumed
+
+Coq < _of is assumed
+
+Coq < _resident is assumed
+
+Coq < _tea is assumed
+
+Coq < Toplevel input, characters 13-191:
+> Theorem t1: (fun F1 F3 => (forall x, ((_resident x) -> ((and (exists z1, (and (and (and (and (and (_north z1) (_america z1)) (_drink_e2 z1)) (_tea z1)) True) (_of x z1))) (F1 x)) -> (F3 x))))) -> (forall x, ((and (_mexican x) (_resident x)) -> (True -> (exists z2, (and (and (and (_resident z2) (exists z1, (and (and (and (and (_north z1) (_american z1)) (_contient z1)) True) (_of z2 z1)))) True) (x = z2)))))) -> (not (forall x, ((and (_mexican x) (_resident x)) -> (True -> (exists z1, (and (and (_tea z1) True) (_drink_e3 x z1))))))).
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error: The term
+"fun (F1 : Entity -> Prop) (F3 : Entity -> Type) =>
+forall x : Entity,
+_resident x ->
+(exists z1 : Entity,
+((((_north z1 /\ _america z1) /\ _drink_e2 z1) /\ _tea z1) /\ True) /\
+_of x z1) /\ F1 x -> F3 x" has type
+"(Entity -> Prop) -> (Entity -> Type) -> Type"
+which should be Set, Prop or Type.
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+unknown
+
+
+With minor edits to the Fracas-067 test, this fails. Troublesome. Not sure what the difference
+is between this and the other one.
+

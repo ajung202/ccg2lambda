@@ -13,21 +13,44 @@
       </script>
     </head>
     <body>
-    <p>Premise 0, tree s0_ccg0: Koreans like tea .</p>
+    <p>Premise 0, tree s0_ccg0: An Irishman won the Noble prize for literature .</p>
 <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mfrac linethickness='0px'>
   <mrow><mrow><mo>rp</mo><mfrac linethickness='3px'>
   <mrow><mfrac linethickness='0px'>
   <mrow><mrow><mo>ba</mo><mfrac linethickness='3px'>
   <mrow><mfrac linethickness='0px'>
-  <mrow><mrow><mo>lex</mo><mfrac linethickness='3px'>
+  <mrow><mrow><mo>fa</mo><mfrac linethickness='3px'>
   <mrow><mfrac linethickness='0px'>
   <mrow><mfrac linethickness='0px'>
-  <mrow><mtext  fontsize='1.0' color='Black'>Koreans</mtext>
+  <mrow><mtext  fontsize='1.0' color='Black'>An</mtext>
 </mrow>
   <mrow><mfrac linethickness='0px'>
-  <mrow><mtext  fontsize='1.0' color='Green'>NNPS</mtext>
+  <mrow><mtext  fontsize='1.0' color='Green'>DT</mtext>
 <mtext>,</mtext><mspace width='.1em'/><mtext  fontsize='1.0' color='Green'>O</mtext>
+</mrow>
+  <mrow><msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>NP  </mi>
+  <mrow>
+    <mi mathvariant='italic' fontsize='0.8' color='Purple'>[nb=true]  </mi>
+  </mrow>
+</msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>/N  </mi>
+</mrow>
+</mfrac>
+</mrow>
+</mfrac>
+</mrow>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\F1 F2 F3.exists x.(F1(x) &amp; F2(x) &amp; F3(x))</mtext>
+</mrow>
+</mfrac>
+<mfrac linethickness='0px'>
+  <mrow><mfrac linethickness='0px'>
+  <mrow><mtext  fontsize='1.0' color='Black'>Irishman</mtext>
+</mrow>
+  <mrow><mfrac linethickness='0px'>
+  <mrow><mtext  fontsize='1.0' color='Green'>NNP</mtext>
+<mtext>,</mtext><mspace width='.1em'/><mtext  fontsize='1.0' color='Green'>I-ORG</mtext>
 </mrow>
   <mrow>  <mi mathvariant='italic' fontsize='1.0' color='Red'>N  </mi>
 </mrow>
@@ -35,41 +58,96 @@
 </mrow>
 </mfrac>
 </mrow>
-  <mrow><mtext  fontsize='1.0' color='Blue'>\x._koreans(x)</mtext>
+  <mrow><mtext  fontsize='1.0' color='Blue'>_irishman</mtext>
 </mrow>
 </mfrac>
 </mrow>
-  <mrow>  <mi mathvariant='italic' fontsize='1.0' color='Red'>NP  </mi>
+  <mrow><msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>NP  </mi>
+  <mrow>
+    <mi mathvariant='italic' fontsize='0.8' color='Purple'>[nb=true]  </mi>
+  </mrow>
+</msub>
 </mrow>
 </mfrac>
 </mrow></mrow>
-  <mrow><mtext  fontsize='1.0' color='Blue'>\F1 F2.exists x.(_koreans(x) &amp; F1(x) &amp; F2(x))</mtext>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\F2 F3.exists x.(_irishman(x) &amp; F2(x) &amp; F3(x))</mtext>
 </mrow>
 </mfrac>
 <mfrac linethickness='0px'>
   <mrow><mrow><mo>fa</mo><mfrac linethickness='3px'>
   <mrow><mfrac linethickness='0px'>
   <mrow><mfrac linethickness='0px'>
-  <mrow><mtext  fontsize='1.0' color='Black'>like</mtext>
+  <mrow><mtext  fontsize='1.0' color='Black'>won</mtext>
 </mrow>
   <mrow><mfrac linethickness='0px'>
-  <mrow><mtext  fontsize='1.0' color='Green'>IN</mtext>
+  <mrow><mtext  fontsize='1.0' color='Green'>VBD</mtext>
 <mtext>,</mtext><mspace width='.1em'/><mtext  fontsize='1.0' color='Green'>O</mtext>
 </mrow>
-  <mrow>  <mi mathvariant='italic' fontsize='1.0' color='Red'>(NP\NP)/NP  </mi>
+  <mrow><msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>(S  </mi>
+  <mrow>
+    <mi mathvariant='italic' fontsize='0.8' color='Purple'>[dcl=true]  </mi>
+  </mrow>
+</msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>\NP)/NP  </mi>
 </mrow>
 </mfrac>
 </mrow>
 </mfrac>
 </mrow>
-  <mrow><mtext  fontsize='1.0' color='Blue'>\Q1 Q2 F1.Q2(\x.(Q1(\w.TrueP,\y._like(x,y)) &amp; F1(x)))</mtext>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\Q1 Q2.Q2(\w.TrueP,\x.Q1(\w.TrueP,\y._win(x,y)))</mtext>
 </mrow>
 </mfrac>
 <mfrac linethickness='0px'>
-  <mrow><mrow><mo>lex</mo><mfrac linethickness='3px'>
+  <mrow><mrow><mo>ba</mo><mfrac linethickness='3px'>
+  <mrow><mfrac linethickness='0px'>
+  <mrow><mrow><mo>fa</mo><mfrac linethickness='3px'>
   <mrow><mfrac linethickness='0px'>
   <mrow><mfrac linethickness='0px'>
-  <mrow><mtext  fontsize='1.0' color='Black'>tea</mtext>
+  <mrow><mtext  fontsize='1.0' color='Black'>the</mtext>
+</mrow>
+  <mrow><mfrac linethickness='0px'>
+  <mrow><mtext  fontsize='1.0' color='Green'>DT</mtext>
+<mtext>,</mtext><mspace width='.1em'/><mtext  fontsize='1.0' color='Green'>O</mtext>
+</mrow>
+  <mrow><msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>NP  </mi>
+  <mrow>
+    <mi mathvariant='italic' fontsize='0.8' color='Purple'>[nb=true]  </mi>
+  </mrow>
+</msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>/N  </mi>
+</mrow>
+</mfrac>
+</mrow>
+</mfrac>
+</mrow>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\F1 F2 F3.exists x.(F1(x) &amp; F2(x) &amp; F3(x))</mtext>
+</mrow>
+</mfrac>
+<mfrac linethickness='0px'>
+  <mrow><mrow><mo>fa</mo><mfrac linethickness='3px'>
+  <mrow><mfrac linethickness='0px'>
+  <mrow><mfrac linethickness='0px'>
+  <mrow><mtext  fontsize='1.0' color='Black'>Noble</mtext>
+</mrow>
+  <mrow><mfrac linethickness='0px'>
+  <mrow><mtext  fontsize='1.0' color='Green'>JJ</mtext>
+<mtext>,</mtext><mspace width='.1em'/><mtext  fontsize='1.0' color='Green'>O</mtext>
+</mrow>
+  <mrow>  <mi mathvariant='italic' fontsize='1.0' color='Red'>N/N  </mi>
+</mrow>
+</mfrac>
+</mrow>
+</mfrac>
+</mrow>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\F x.(_noble(x) &amp; F(x))</mtext>
+</mrow>
+</mfrac>
+<mfrac linethickness='0px'>
+  <mrow><mfrac linethickness='0px'>
+  <mrow><mtext  fontsize='1.0' color='Black'>prize</mtext>
 </mrow>
   <mrow><mfrac linethickness='0px'>
   <mrow><mtext  fontsize='1.0' color='Green'>NN</mtext>
@@ -81,7 +159,66 @@
 </mrow>
 </mfrac>
 </mrow>
-  <mrow><mtext  fontsize='1.0' color='Blue'>\x._tea(x)</mtext>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\x._prize(x)</mtext>
+</mrow>
+</mfrac>
+</mrow>
+  <mrow>  <mi mathvariant='italic' fontsize='1.0' color='Red'>N  </mi>
+</mrow>
+</mfrac>
+</mrow></mrow>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\x.(_noble(x) &amp; _prize(x))</mtext>
+</mrow>
+</mfrac>
+</mrow>
+  <mrow><msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>NP  </mi>
+  <mrow>
+    <mi mathvariant='italic' fontsize='0.8' color='Purple'>[nb=true]  </mi>
+  </mrow>
+</msub>
+</mrow>
+</mfrac>
+</mrow></mrow>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\F2 F3.exists x.(_noble(x) &amp; _prize(x) &amp; F2(x) &amp; F3(x))</mtext>
+</mrow>
+</mfrac>
+<mfrac linethickness='0px'>
+  <mrow><mrow><mo>fa</mo><mfrac linethickness='3px'>
+  <mrow><mfrac linethickness='0px'>
+  <mrow><mfrac linethickness='0px'>
+  <mrow><mtext  fontsize='1.0' color='Black'>for</mtext>
+</mrow>
+  <mrow><mfrac linethickness='0px'>
+  <mrow><mtext  fontsize='1.0' color='Green'>IN</mtext>
+<mtext>,</mtext><mspace width='.1em'/><mtext  fontsize='1.0' color='Green'>O</mtext>
+</mrow>
+  <mrow>  <mi mathvariant='italic' fontsize='1.0' color='Red'>(NP\NP)/NP  </mi>
+</mrow>
+</mfrac>
+</mrow>
+</mfrac>
+</mrow>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\Q1 Q2 F1.Q2(\x.(Q1(\w.TrueP,\y._for(x,y)) &amp; F1(x)))</mtext>
+</mrow>
+</mfrac>
+<mfrac linethickness='0px'>
+  <mrow><mrow><mo>lex</mo><mfrac linethickness='3px'>
+  <mrow><mfrac linethickness='0px'>
+  <mrow><mfrac linethickness='0px'>
+  <mrow><mtext  fontsize='1.0' color='Black'>literature</mtext>
+</mrow>
+  <mrow><mfrac linethickness='0px'>
+  <mrow><mtext  fontsize='1.0' color='Green'>NN</mtext>
+<mtext>,</mtext><mspace width='.1em'/><mtext  fontsize='1.0' color='Green'>O</mtext>
+</mrow>
+  <mrow>  <mi mathvariant='italic' fontsize='1.0' color='Red'>N  </mi>
+</mrow>
+</mfrac>
+</mrow>
+</mfrac>
+</mrow>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\x._literature(x)</mtext>
 </mrow>
 </mfrac>
 </mrow>
@@ -89,7 +226,7 @@
 </mrow>
 </mfrac>
 </mrow></mrow>
-  <mrow><mtext  fontsize='1.0' color='Blue'>\F1 F2.exists x.(_tea(x) &amp; F1(x) &amp; F2(x))</mtext>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\F1 F2.exists x.(_literature(x) &amp; F1(x) &amp; F2(x))</mtext>
 </mrow>
 </mfrac>
 </mrow>
@@ -97,7 +234,7 @@
 </mrow>
 </mfrac>
 </mrow></mrow>
-  <mrow><mtext  fontsize='1.0' color='Blue'>\Q2 F1.Q2(\x.(exists z1.(_tea(z1) &amp; TrueP &amp; _like(x,z1)) &amp; F1(x)))</mtext>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\Q2 F1.Q2(\x.(exists z1.(_literature(z1) &amp; TrueP &amp; _for(x,z1)) &amp; F1(x)))</mtext>
 </mrow>
 </mfrac>
 </mrow>
@@ -105,7 +242,34 @@
 </mrow>
 </mfrac>
 </mrow></mrow>
-  <mrow><mtext  fontsize='1.0' color='Blue'>\F1 F2.exists x.(_koreans(x) &amp; exists z1.(_tea(z1) &amp; TrueP &amp; _like(x,z1)) &amp; F1(x) &amp; F2(x))</mtext>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\F1 F3.exists x.(_noble(x) &amp; _prize(x) &amp; exists z1.(_literature(z1) &amp; TrueP &amp; _for(x,z1)) &amp; F1(x) &amp; F3(x))</mtext>
+</mrow>
+</mfrac>
+</mrow>
+  <mrow><msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>S  </mi>
+  <mrow>
+    <mi mathvariant='italic' fontsize='0.8' color='Purple'>[dcl=true]  </mi>
+  </mrow>
+</msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>\NP  </mi>
+</mrow>
+</mfrac>
+</mrow></mrow>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\Q2.Q2(\w.TrueP,\x.exists z2.(_noble(z2) &amp; _prize(z2) &amp; exists z1.(_literature(z1) &amp; TrueP &amp; _for(z2,z1)) &amp; TrueP &amp; _win(x,z2)))</mtext>
+</mrow>
+</mfrac>
+</mrow>
+  <mrow><msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>S  </mi>
+  <mrow>
+    <mi mathvariant='italic' fontsize='0.8' color='Purple'>[dcl=true]  </mi>
+  </mrow>
+</msub>
+</mrow>
+</mfrac>
+</mrow></mrow>
+  <mrow><mtext  fontsize='1.0' color='Blue'>exists x.(_irishman(x) &amp; TrueP &amp; exists z2.(_noble(z2) &amp; _prize(z2) &amp; exists z1.(_literature(z1) &amp; TrueP &amp; _for(z2,z1)) &amp; TrueP &amp; _win(x,z2)))</mtext>
 </mrow>
 </mfrac>
 <mfrac linethickness='0px'>
@@ -119,29 +283,57 @@
 </mrow>
 </mfrac>
 </mrow>
-  <mrow>  <mi mathvariant='italic' fontsize='1.0' color='Red'>NP  </mi>
+  <mrow><msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>S  </mi>
+  <mrow>
+    <mi mathvariant='italic' fontsize='0.8' color='Purple'>[dcl=true]  </mi>
+  </mrow>
+</msub>
 </mrow>
 </mfrac>
 </mrow></mrow>
-  <mrow><mtext  fontsize='1.0' color='Blue'>\F1 F2.exists x.(_koreans(x) &amp; exists z1.(_tea(z1) &amp; TrueP &amp; _like(x,z1)) &amp; F1(x) &amp; F2(x))</mtext>
+  <mrow><mtext  fontsize='1.0' color='Blue'>exists x.(_irishman(x) &amp; TrueP &amp; exists z2.(_noble(z2) &amp; _prize(z2) &amp; exists z1.(_literature(z1) &amp; TrueP &amp; _for(z2,z1)) &amp; TrueP &amp; _win(x,z2)))</mtext>
 </mrow>
 </mfrac>
 </math>
-<p>Conclusion, tree s1_ccg0: Germans like tea .</p>
+<p>Conclusion, tree s1_ccg0: An Irishman won a Nobel prize .</p>
 <math xmlns='http://www.w3.org/1998/Math/MathML'>
 <mfrac linethickness='0px'>
   <mrow><mrow><mo>rp</mo><mfrac linethickness='3px'>
   <mrow><mfrac linethickness='0px'>
   <mrow><mrow><mo>ba</mo><mfrac linethickness='3px'>
   <mrow><mfrac linethickness='0px'>
-  <mrow><mrow><mo>lex</mo><mfrac linethickness='3px'>
+  <mrow><mrow><mo>fa</mo><mfrac linethickness='3px'>
   <mrow><mfrac linethickness='0px'>
   <mrow><mfrac linethickness='0px'>
-  <mrow><mtext  fontsize='1.0' color='Black'>Germans</mtext>
+  <mrow><mtext  fontsize='1.0' color='Black'>An</mtext>
 </mrow>
   <mrow><mfrac linethickness='0px'>
-  <mrow><mtext  fontsize='1.0' color='Green'>NNS</mtext>
+  <mrow><mtext  fontsize='1.0' color='Green'>DT</mtext>
 <mtext>,</mtext><mspace width='.1em'/><mtext  fontsize='1.0' color='Green'>O</mtext>
+</mrow>
+  <mrow><msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>NP  </mi>
+  <mrow>
+    <mi mathvariant='italic' fontsize='0.8' color='Purple'>[nb=true]  </mi>
+  </mrow>
+</msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>/N  </mi>
+</mrow>
+</mfrac>
+</mrow>
+</mfrac>
+</mrow>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\F1 F2 F3.exists x.(F1(x) &amp; F2(x) &amp; F3(x))</mtext>
+</mrow>
+</mfrac>
+<mfrac linethickness='0px'>
+  <mrow><mfrac linethickness='0px'>
+  <mrow><mtext  fontsize='1.0' color='Black'>Irishman</mtext>
+</mrow>
+  <mrow><mfrac linethickness='0px'>
+  <mrow><mtext  fontsize='1.0' color='Green'>NNP</mtext>
+<mtext>,</mtext><mspace width='.1em'/><mtext  fontsize='1.0' color='Green'>I-ORG</mtext>
 </mrow>
   <mrow>  <mi mathvariant='italic' fontsize='1.0' color='Red'>N  </mi>
 </mrow>
@@ -149,41 +341,94 @@
 </mrow>
 </mfrac>
 </mrow>
-  <mrow><mtext  fontsize='1.0' color='Blue'>\x._german(x)</mtext>
+  <mrow><mtext  fontsize='1.0' color='Blue'>_irishman</mtext>
 </mrow>
 </mfrac>
 </mrow>
-  <mrow>  <mi mathvariant='italic' fontsize='1.0' color='Red'>NP  </mi>
+  <mrow><msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>NP  </mi>
+  <mrow>
+    <mi mathvariant='italic' fontsize='0.8' color='Purple'>[nb=true]  </mi>
+  </mrow>
+</msub>
 </mrow>
 </mfrac>
 </mrow></mrow>
-  <mrow><mtext  fontsize='1.0' color='Blue'>\F1 F2.exists x.(_german(x) &amp; F1(x) &amp; F2(x))</mtext>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\F2 F3.exists x.(_irishman(x) &amp; F2(x) &amp; F3(x))</mtext>
 </mrow>
 </mfrac>
 <mfrac linethickness='0px'>
   <mrow><mrow><mo>fa</mo><mfrac linethickness='3px'>
   <mrow><mfrac linethickness='0px'>
   <mrow><mfrac linethickness='0px'>
-  <mrow><mtext  fontsize='1.0' color='Black'>like</mtext>
+  <mrow><mtext  fontsize='1.0' color='Black'>won</mtext>
 </mrow>
   <mrow><mfrac linethickness='0px'>
-  <mrow><mtext  fontsize='1.0' color='Green'>IN</mtext>
+  <mrow><mtext  fontsize='1.0' color='Green'>VBD</mtext>
 <mtext>,</mtext><mspace width='.1em'/><mtext  fontsize='1.0' color='Green'>O</mtext>
 </mrow>
-  <mrow>  <mi mathvariant='italic' fontsize='1.0' color='Red'>(NP\NP)/NP  </mi>
+  <mrow><msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>(S  </mi>
+  <mrow>
+    <mi mathvariant='italic' fontsize='0.8' color='Purple'>[dcl=true]  </mi>
+  </mrow>
+</msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>\NP)/NP  </mi>
 </mrow>
 </mfrac>
 </mrow>
 </mfrac>
 </mrow>
-  <mrow><mtext  fontsize='1.0' color='Blue'>\Q1 Q2 F1.Q2(\x.(Q1(\w.TrueP,\y._like(x,y)) &amp; F1(x)))</mtext>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\Q1 Q2.Q2(\w.TrueP,\x.Q1(\w.TrueP,\y._win(x,y)))</mtext>
 </mrow>
 </mfrac>
 <mfrac linethickness='0px'>
-  <mrow><mrow><mo>lex</mo><mfrac linethickness='3px'>
+  <mrow><mrow><mo>fa</mo><mfrac linethickness='3px'>
   <mrow><mfrac linethickness='0px'>
   <mrow><mfrac linethickness='0px'>
-  <mrow><mtext  fontsize='1.0' color='Black'>tea</mtext>
+  <mrow><mtext  fontsize='1.0' color='Black'>a</mtext>
+</mrow>
+  <mrow><mfrac linethickness='0px'>
+  <mrow><mtext  fontsize='1.0' color='Green'>DT</mtext>
+<mtext>,</mtext><mspace width='.1em'/><mtext  fontsize='1.0' color='Green'>O</mtext>
+</mrow>
+  <mrow><msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>NP  </mi>
+  <mrow>
+    <mi mathvariant='italic' fontsize='0.8' color='Purple'>[nb=true]  </mi>
+  </mrow>
+</msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>/N  </mi>
+</mrow>
+</mfrac>
+</mrow>
+</mfrac>
+</mrow>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\F1 F2 F3.exists x.(F1(x) &amp; F2(x) &amp; F3(x))</mtext>
+</mrow>
+</mfrac>
+<mfrac linethickness='0px'>
+  <mrow><mrow><mo>fa</mo><mfrac linethickness='3px'>
+  <mrow><mfrac linethickness='0px'>
+  <mrow><mfrac linethickness='0px'>
+  <mrow><mtext  fontsize='1.0' color='Black'>Nobel</mtext>
+</mrow>
+  <mrow><mfrac linethickness='0px'>
+  <mrow><mtext  fontsize='1.0' color='Green'>NNP</mtext>
+<mtext>,</mtext><mspace width='.1em'/><mtext  fontsize='1.0' color='Green'>O</mtext>
+</mrow>
+  <mrow>  <mi mathvariant='italic' fontsize='1.0' color='Red'>N/N  </mi>
+</mrow>
+</mfrac>
+</mrow>
+</mfrac>
+</mrow>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\F x.(_nobel(x) &amp; F(x))</mtext>
+</mrow>
+</mfrac>
+<mfrac linethickness='0px'>
+  <mrow><mfrac linethickness='0px'>
+  <mrow><mtext  fontsize='1.0' color='Black'>prize</mtext>
 </mrow>
   <mrow><mfrac linethickness='0px'>
   <mrow><mtext  fontsize='1.0' color='Green'>NN</mtext>
@@ -195,31 +440,55 @@
 </mrow>
 </mfrac>
 </mrow>
-  <mrow><mtext  fontsize='1.0' color='Blue'>\x._tea(x)</mtext>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\x._prize(x)</mtext>
 </mrow>
 </mfrac>
 </mrow>
-  <mrow>  <mi mathvariant='italic' fontsize='1.0' color='Red'>NP  </mi>
-</mrow>
-</mfrac>
-</mrow></mrow>
-  <mrow><mtext  fontsize='1.0' color='Blue'>\F1 F2.exists x.(_tea(x) &amp; F1(x) &amp; F2(x))</mtext>
-</mrow>
-</mfrac>
-</mrow>
-  <mrow>  <mi mathvariant='italic' fontsize='1.0' color='Red'>NP\NP  </mi>
+  <mrow>  <mi mathvariant='italic' fontsize='1.0' color='Red'>N  </mi>
 </mrow>
 </mfrac>
 </mrow></mrow>
-  <mrow><mtext  fontsize='1.0' color='Blue'>\Q2 F1.Q2(\x.(exists z1.(_tea(z1) &amp; TrueP &amp; _like(x,z1)) &amp; F1(x)))</mtext>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\x.(_nobel(x) &amp; _prize(x))</mtext>
 </mrow>
 </mfrac>
 </mrow>
-  <mrow>  <mi mathvariant='italic' fontsize='1.0' color='Red'>NP  </mi>
+  <mrow><msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>NP  </mi>
+  <mrow>
+    <mi mathvariant='italic' fontsize='0.8' color='Purple'>[nb=true]  </mi>
+  </mrow>
+</msub>
 </mrow>
 </mfrac>
 </mrow></mrow>
-  <mrow><mtext  fontsize='1.0' color='Blue'>\F1 F2.exists x.(_german(x) &amp; exists z1.(_tea(z1) &amp; TrueP &amp; _like(x,z1)) &amp; F1(x) &amp; F2(x))</mtext>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\F2 F3.exists x.(_nobel(x) &amp; _prize(x) &amp; F2(x) &amp; F3(x))</mtext>
+</mrow>
+</mfrac>
+</mrow>
+  <mrow><msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>S  </mi>
+  <mrow>
+    <mi mathvariant='italic' fontsize='0.8' color='Purple'>[dcl=true]  </mi>
+  </mrow>
+</msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>\NP  </mi>
+</mrow>
+</mfrac>
+</mrow></mrow>
+  <mrow><mtext  fontsize='1.0' color='Blue'>\Q2.Q2(\w.TrueP,\x.exists z1.(_nobel(z1) &amp; _prize(z1) &amp; TrueP &amp; _win(x,z1)))</mtext>
+</mrow>
+</mfrac>
+</mrow>
+  <mrow><msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>S  </mi>
+  <mrow>
+    <mi mathvariant='italic' fontsize='0.8' color='Purple'>[dcl=true]  </mi>
+  </mrow>
+</msub>
+</mrow>
+</mfrac>
+</mrow></mrow>
+  <mrow><mtext  fontsize='1.0' color='Blue'>exists x.(_irishman(x) &amp; TrueP &amp; exists z1.(_nobel(z1) &amp; _prize(z1) &amp; TrueP &amp; _win(x,z1)))</mtext>
 </mrow>
 </mfrac>
 <mfrac linethickness='0px'>
@@ -233,30 +502,41 @@
 </mrow>
 </mfrac>
 </mrow>
-  <mrow>  <mi mathvariant='italic' fontsize='1.0' color='Red'>NP  </mi>
+  <mrow><msub>
+  <mi mathvariant='italic' fontsize='1.0' color='Red'>S  </mi>
+  <mrow>
+    <mi mathvariant='italic' fontsize='0.8' color='Purple'>[dcl=true]  </mi>
+  </mrow>
+</msub>
 </mrow>
 </mfrac>
 </mrow></mrow>
-  <mrow><mtext  fontsize='1.0' color='Blue'>\F1 F2.exists x.(_german(x) &amp; exists z1.(_tea(z1) &amp; TrueP &amp; _like(x,z1)) &amp; F1(x) &amp; F2(x))</mtext>
+  <mrow><mtext  fontsize='1.0' color='Blue'>exists x.(_irishman(x) &amp; TrueP &amp; exists z1.(_nobel(z1) &amp; _prize(z1) &amp; TrueP &amp; _win(x,z1)))</mtext>
 </mrow>
 </mfrac>
 </math>
 
 <p>Script piped to coq</p><pre>
 Require Export coqlib.
-Parameter _german : Entity -> Prop.
-Parameter _koreans : Entity -> Prop.
-Parameter _like : Entity -> (Entity -> Prop).
-Parameter _tea : Entity -> Prop.
-Theorem t1: (fun F1 F2 => (exists x, (and (and (and (_koreans x) (exists z1, (and (and (_tea z1) True) (_like x z1)))) (F1 x)) (F2 x)))) -> (fun F1 F2 => (exists x, (and (and (and (_german x) (exists z1, (and (and (_tea z1) True) (_like x z1)))) (F1 x)) (F2 x)))). Set Firstorder Depth 1. nltac. Set Firstorder Depth 6. nltac. Qed.
+Parameter _for : Entity -> (Entity -> Prop).
+Parameter _irishman : Entity -> Prop.
+Parameter _literature : Entity -> Prop.
+Parameter _nobel : Entity -> Prop.
+Parameter _noble : Entity -> Prop.
+Parameter _prize : Entity -> Prop.
+Parameter _win : Entity -> (Entity -> Prop).
+Theorem t1: (exists x, (and (and (_irishman x) True) (exists z2, (and (and (and (and (_noble z2) (_prize z2)) (exists z1, (and (and (_literature z1) True) (_for z2 z1)))) True) (_win x z2))))) -> (exists x, (and (and (_irishman x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1))))). Set Firstorder Depth 1. nltac. Set Firstorder Depth 6. nltac. Qed.
 </pre>
 <pre>
 Require Export coqlib.
-Parameter _german : Entity -> Prop.
-Parameter _koreans : Entity -> Prop.
-Parameter _like : Entity -> (Entity -> Prop).
-Parameter _tea : Entity -> Prop.
-Theorem t1: (fun F1 F2 => (exists x, (and (and (and (_koreans x) (exists z1, (and (and (_tea z1) True) (_like x z1)))) (F1 x)) (F2 x)))) -> (not (fun F1 F2 => (exists x, (and (and (and (_german x) (exists z1, (and (and (_tea z1) True) (_like x z1)))) (F1 x)) (F2 x))))). Set Firstorder Depth 1. nltac. Set Firstorder Depth 6. nltac. Qed.
+Parameter _for : Entity -> (Entity -> Prop).
+Parameter _irishman : Entity -> Prop.
+Parameter _literature : Entity -> Prop.
+Parameter _nobel : Entity -> Prop.
+Parameter _noble : Entity -> Prop.
+Parameter _prize : Entity -> Prop.
+Parameter _win : Entity -> (Entity -> Prop).
+Theorem t1: (exists x, (and (and (_irishman x) True) (exists z2, (and (and (and (and (_noble z2) (_prize z2)) (exists z1, (and (and (_literature z1) True) (_for z2 z1)))) True) (_win x z2))))) -> (not (exists x, (and (and (_irishman x) True) (exists z1, (and (and (and (_nobel z1) (_prize z1)) True) (_win x z1)))))). Set Firstorder Depth 1. nltac. Set Firstorder Depth 6. nltac. Qed.
 </pre>
     </body>
     </html>

@@ -1,0 +1,188 @@
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _american is assumed
+
+Coq < _can is assumed
+
+Coq < _canadian is assumed
+
+Coq < _continent is assumed
+
+Coq < _europe is assumed
+
+Coq < _freely is assumed
+
+Coq < _north is assumed
+
+Coq < _of is assumed
+
+Coq < _resident is assumed
+
+Coq < _travel is assumed
+
+Coq < _within is assumed
+
+Coq < 1 subgoal
+
+============================
+(forall x : Entity,
+_resident x ->
+(exists z1 : Entity,
+(((_north z1 /\ _american z1) /\ _continent z1) /\ True) /\ _of x z1) /\
+True ->
+_can
+(exists z3 : Entity,
+(((z3 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)) ->
+(forall x : Entity,
+_canadian x /\ _resident x ->
+True ->
+exists z2 : Entity,
+((_resident z2 /\
+(exists z1 : Entity,
+(((_north z1 /\ _american z1) /\ _continent z1) /\ True) /\
+_of z2 z1)) /\ True) /\ x = z2) ->
+forall x : Entity,
+_canadian x /\ _resident x ->
+True ->
+_can
+(exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+
+Proof completed.
+
+
+Error: No such subgoal
+
+nltac.
+
+t1 is defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _american is assumed
+
+Coq < _can is assumed
+
+Coq < _canadian is assumed
+
+Coq < _continent is assumed
+
+Coq < _europe is assumed
+
+Coq < _freely is assumed
+
+Coq < _north is assumed
+
+Coq < _of is assumed
+
+Coq < _resident is assumed
+
+Coq < _travel is assumed
+
+Coq < _within is assumed
+
+Coq < 1 subgoal
+
+============================
+(forall x : Entity,
+_resident x ->
+(exists z1 : Entity,
+(((_north z1 /\ _american z1) /\ _continent z1) /\ True) /\ _of x z1) /\
+True ->
+_can
+(exists z3 : Entity,
+(((z3 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)) ->
+(forall x : Entity,
+_canadian x /\ _resident x ->
+True ->
+exists z2 : Entity,
+((_resident z2 /\
+(exists z1 : Entity,
+(((_north z1 /\ _american z1) /\ _continent z1) /\ True) /\
+_of z2 z1)) /\ True) /\ x = z2) ->
+forall x : Entity,
+_canadian x /\ _resident x ->
+True ->
+_can
+(exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+1 subgoal
+
+H : forall x : Entity,
+_resident x ->
+(exists z1 : Entity,
+(((_north z1 /\ _american z1) /\ _continent z1) /\ True) /\ _of x z1) /\
+True ->
+_can
+(exists z3 : Entity,
+(((z3 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+H0 : forall x : Entity,
+_canadian x /\ _resident x ->
+True ->
+exists z2 : Entity,
+((_resident z2 /\
+(exists z1 : Entity,
+(((_north z1 /\ _american z1) /\ _continent z1) /\ True) /\
+_of z2 z1)) /\ True) /\ x = z2
+x : Entity
+H2 : True
+H3 : _canadian x
+H4 : _resident x
+============================
+_can
+(exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+1 subgoal
+
+H : forall x : Entity,
+_resident x ->
+(exists z1 : Entity,
+(((_north z1 /\ _american z1) /\ _continent z1) /\ True) /\ _of x z1) /\
+True ->
+_can
+(exists z3 : Entity,
+(((z3 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+H0 : forall x : Entity,
+_canadian x /\ _resident x ->
+True ->
+exists z2 : Entity,
+((_resident z2 /\
+(exists z1 : Entity,
+(((_north z1 /\ _american z1) /\ _continent z1) /\ True) /\
+_of z2 z1)) /\ True) /\ x = z2
+x : Entity
+H2 : True
+H3 : _canadian x
+H4 : _resident x
+============================
+_can
+(exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+repeat nltac_base.
+try substitution.
+<Your Tactic Text here>
+Error: Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined
+yes
+
+
+
+Somehow this program recognizes that Premises 1,2 implies x (Canada) is within Europe. Not sure
+how this does that. That is, this program can recognize some sort of elemental inclusion that
+implies geography/spacial fact about something.

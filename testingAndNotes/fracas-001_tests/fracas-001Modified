@@ -1,0 +1,90 @@
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _exist is assumed
+
+Coq < _italian is assumed
+
+Coq < Toplevel input, characters 78-80:
+> Theorem t1: (exists x, (and (and (_italian x) True) (_exist x))) -> (exists x z1, (and (and (_italian z1) True) (x = z1))).
+>                                                                               ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+
+Error: Unknown command of the non proof-editing mode.
+
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _exist is assumed
+
+Coq < _italian is assumed
+
+Coq < Toplevel input, characters 83-85:
+> Theorem t1: (exists x, (and (and (_italian x) True) (_exist x))) -> (not (exists x z1, (and (and (_italian z1) True) (x = z1)))).
+>                                                                                    ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+
+Error: Unknown command of the non proof-editing mode.
+
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _exist is assumed
+
+Coq < _italian is assumed
+
+Coq < Toplevel input, characters 78-80:
+> Theorem t1: (exists x, (and (and (_italian x) True) (_exist x))) -> (exists x z1, (and (and (_italian z1) True) (x = z1))).
+>                                                                               ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _exist is assumed
+
+Coq < _italian is assumed
+
+Coq < Toplevel input, characters 83-85:
+> Theorem t1: (exists x, (and (and (_italian x) True) (_exist x))) -> (not (exists x z1, (and (and (_italian z1) True) (x = z1)))).
+>                                                                                    ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+unknown
+

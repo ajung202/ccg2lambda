@@ -1,0 +1,339 @@
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _can is assumed
+
+Coq < _europe is assumed
+
+Coq < _european is assumed
+
+Coq < _freely is assumed
+
+Coq < _outside is assumed
+
+Coq < _resident is assumed
+
+Coq < _travel is assumed
+
+Coq < _within is assumed
+
+Coq < 1 subgoal
+
+============================
+most x; _european x /\ True,
+_can
+(exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x) ->
+most x;
+(_european x /\
+(exists z1 : Entity,
+((z1 = _europe /\ True) /\ _outside x _europe) /\ _resident x)) /\
+True,
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+
+1 subgoal
+
+============================
+most x; _european x /\ True,
+_can
+(exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x) ->
+most x;
+(_european x /\
+(exists z1 : Entity,
+((z1 = _europe /\ True) /\ _outside x _europe) /\ _resident x)) /\
+True,
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+
+1 subgoal
+
+============================
+most x; _european x /\ True,
+_can
+(exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x) ->
+most x;
+(_european x /\
+(exists z1 : Entity,
+((z1 = _europe /\ True) /\ _outside x _europe) /\ _resident x)) /\
+True,
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+nltac.
+nltac.
+<Your Tactic Text here>
+Error: Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _can is assumed
+
+Coq < _europe is assumed
+
+Coq < _european is assumed
+
+Coq < _freely is assumed
+
+Coq < _outside is assumed
+
+Coq < _resident is assumed
+
+Coq < _travel is assumed
+
+Coq < _within is assumed
+
+Coq < 1 subgoal
+
+============================
+most x; _european x /\ True,
+_can
+(exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x) ->
+~
+most x;
+(_european x /\
+(exists z1 : Entity,
+((z1 = _europe /\ True) /\ _outside x _europe) /\ _resident x)) /\
+True,
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+
+1 subgoal
+
+============================
+most x; _european x /\ True,
+_can
+(exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x) ->
+~
+most x;
+(_european x /\
+(exists z1 : Entity,
+((z1 = _europe /\ True) /\ _outside x _europe) /\ _resident x)) /\
+True,
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+
+1 subgoal
+
+============================
+most x; _european x /\ True,
+_can
+(exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x) ->
+~
+most x;
+(_european x /\
+(exists z1 : Entity,
+((z1 = _europe /\ True) /\ _outside x _europe) /\ _resident x)) /\
+True,
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+nltac.
+nltac.
+<Your Tactic Text here>
+Error: Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _can is assumed
+
+Coq < _europe is assumed
+
+Coq < _european is assumed
+
+Coq < _freely is assumed
+
+Coq < _outside is assumed
+
+Coq < _resident is assumed
+
+Coq < _travel is assumed
+
+Coq < _within is assumed
+
+Coq < 1 subgoal
+
+============================
+most x; _european x /\ True,
+_can
+(exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x) ->
+most x;
+(_european x /\
+(exists z1 : Entity,
+((z1 = _europe /\ True) /\ _outside x _europe) /\ _resident x)) /\
+True,
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+1 subgoal
+
+H : most x; _european x /\ True,
+_can
+(exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+============================
+most x;
+(_european x /\
+(exists z1 : Entity,
+((z1 = _europe /\ True) /\ _outside x _europe) /\ _resident x)) /\
+True,
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+1 subgoal
+
+H : most x; _european x /\ True,
+_can
+(exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+============================
+most x;
+(_european x /\
+(exists z1 : Entity,
+((z1 = _europe /\ True) /\ _outside x _europe) /\ _resident x)) /\
+True,
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+repeat nltac_base.
+try substitution.
+<Your Tactic Text here>
+Error: Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq <
+Coq < _can is assumed
+
+Coq < _europe is assumed
+
+Coq < _european is assumed
+
+Coq < _freely is assumed
+
+Coq < _outside is assumed
+
+Coq < _resident is assumed
+
+Coq < _travel is assumed
+
+Coq < _within is assumed
+
+Coq < 1 subgoal
+
+============================
+most x; _european x /\ True,
+_can
+(exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x) ->
+~
+most x;
+(_european x /\
+(exists z1 : Entity,
+((z1 = _europe /\ True) /\ _outside x _europe) /\ _resident x)) /\
+True,
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+
+1 subgoal
+
+H : most x; _european x /\ True,
+_can
+(exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+H0 : most x;
+(_european x /\
+(exists z1 : Entity,
+((z1 = _europe /\ True) /\ _outside x _europe) /\ _resident x)) /\
+True,
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+============================
+False
+
+1 subgoal
+
+H : most x; _european x /\ True,
+_can
+(exists z2 : Entity,
+(((z2 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+H0 : most x;
+(_european x /\
+(exists z1 : Entity,
+((z1 = _europe /\ True) /\ _outside x _europe) /\ _resident x)) /\
+True,
+_can
+(exists z5 : Entity,
+(((z5 = _europe /\ True) /\ _within x _europe) /\ _freely x) /\
+_travel x)
+============================
+False
+
+repeat nltac_base.
+try substitution.
+<Your Tactic Text here>
+Error: Attempt to save an incomplete proof
+
+t1 <
+
+Theorem is not defined
+unknown
+
+
+This seems to be mixing up the idea of being European and being in Europe. Not sure how Fracas-067 bypasses this, however. Maybe because Fracas 067 has "is a" that is super clear? 
+

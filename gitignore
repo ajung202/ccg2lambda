@@ -1,0 +1,4 @@
+*.vo
+*.vok
+*.vos
+__pycache__
