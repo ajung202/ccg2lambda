@@ -1,0 +1,133 @@
+Fcoqlib
+ax 10:15 <> Entity
+ax 36:38 <> Rel
+R52:57 coqlib <> Entity defax
+R42:47 coqlib <> Entity defax
+ax 78:81 <> Prog
+ax 109:111 <> two
+R115:120 coqlib <> Entity defax
+ax 141:143 <> Top
+R157:162 coqlib <> Entity defax
+R147:152 coqlib <> Entity defax
+ax 175:178 <> Most
+R203:208 coqlib <> Entity defax
+R183:188 coqlib <> Entity defax
+R316:319 coqlib <> Most defax
+not 293 <> :type_scope:'most'_x_';'_x_','_x
+ax 416:429 <> most_ex_import
+R481:487 Coq.Init.Logic <> :type_scope:'exists'_x_','_x not
+R489:490 Coq.Init.Logic <> :type_scope:'exists'_x_','_x not
+R494:497 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R469:472 coqlib <> Most defax
+R448:453 coqlib <> Entity defax
+R448:453 coqlib <> Entity defax
+ax 511:520 <> most_consv
+R572:575 coqlib <> Most defax
+R593:596 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R560:563 coqlib <> Most defax
+R539:544 coqlib <> Entity defax
+R539:544 coqlib <> Entity defax
+ax 612:623 <> most_rightup
+R709:712 coqlib <> Most defax
+R666:669 coqlib <> Most defax
+R644:649 coqlib <> Entity defax
+R644:649 coqlib <> Entity defax
+R644:649 coqlib <> Entity defax
+R735:748 coqlib <> most_ex_import prfax
+R750:759 coqlib <> most_consv prfax
+R761:772 coqlib <> most_rightup prfax
+ax 813:817 <> _true
+ax 842:855 <> veridical_true
+R870:874 coqlib <> _true defax
+R941:945 coqlib <> _true defax
+R941:945 coqlib <> _true defax
+R971:984 coqlib <> veridical_true prfax
+ax 1041:1046 <> _false
+ax 1071:1089 <> antiveridical_false
+R1116:1116 Coq.Init.Logic <> :type_scope:'~'_x not
+R1104:1109 coqlib <> _false defax
+R1135:1153 coqlib <> antiveridical_false prfax
+R1217:1222 coqlib <> _false defax
+R1217:1222 coqlib <> _false defax
+R1248:1266 coqlib <> antiveridical_false prfax
+ax 1315:1321 <> _manage
+R1325:1330 coqlib <> Entity defax
+ax 1356:1373 <> implicative_manage
+R1390:1396 coqlib <> _manage defax
+R1469:1475 coqlib <> _manage defax
+R1469:1475 coqlib <> _manage defax
+R1503:1520 coqlib <> implicative_manage prfax
+ax 1545:1549 <> _fail
+R1553:1558 coqlib <> Entity defax
+ax 1584:1599 <> implicative_fail
+R1629:1630 Coq.Init.Logic <> :type_scope:'~'_x not
+R1616:1620 coqlib <> _fail defax
+R1693:1697 coqlib <> _fail defax
+R1693:1697 coqlib <> _fail defax
+R1725:1740 coqlib <> implicative_fail prfax
+ax 1785:1789 <> _know
+R1793:1798 coqlib <> Entity defax
+ax 1824:1835 <> factive_know
+R1852:1856 coqlib <> _know defax
+R1918:1922 coqlib <> _know defax
+R1918:1922 coqlib <> _know defax
+R1950:1961 coqlib <> factive_know prfax
+ax 2013:2019 <> _former
+ax 2044:2059 <> privative_former
+R2087:2087 Coq.Init.Logic <> :type_scope:'~'_x not
+R2074:2080 coqlib <> _former defax
+R2106:2121 coqlib <> privative_former prfax
+R2182:2188 coqlib <> _former defax
+R2182:2188 coqlib <> _former defax
+R2214:2229 coqlib <> privative_former prfax
+ax 2277:2283 <> _before
+ax 2319:2324 <> _after
+ax 2357:2375 <> transitivity_before
+R2439:2445 coqlib <> _before defax
+R2422:2428 coqlib <> _before defax
+R2405:2411 coqlib <> _before defax
+ax 2461:2478 <> transitivity_after
+R2540:2545 coqlib <> _after defax
+R2524:2529 coqlib <> _after defax
+R2508:2513 coqlib <> _after defax
+ax 2561:2572 <> before_after
+R2612:2617 coqlib <> _after defax
+R2597:2603 coqlib <> _before defax
+ax 2631:2642 <> after_before
+R2681:2687 coqlib <> _before defax
+R2667:2672 coqlib <> _after defax
+R2708:2726 coqlib <> transitivity_before prfax
+R2728:2745 coqlib <> transitivity_after prfax
+R2747:2758 coqlib <> before_after prfax
+R2760:2771 coqlib <> after_before prfax
+R2873:2878 coqlib <> Entity defax
+R2873:2878 coqlib <> Entity defax
+R2896:2901 coqlib <> Entity defax
+R2896:2901 coqlib <> Entity defax
+R2980:2985 coqlib <> Entity defax
+R2980:2985 coqlib <> Entity defax
+R3077:3079 Coq.Init.Logic <> :type_scope:x_'='_x not
+R3077:3079 Coq.Init.Logic <> :type_scope:x_'='_x not
+R3167:3172 coqlib <> Entity defax
+R3167:3172 coqlib <> Entity defax
+R3205:3209 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R3205:3209 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R3272:3274 Coq.Init.Logic <> :type_scope:x_'='_x not
+R3272:3274 Coq.Init.Logic <> :type_scope:x_'='_x not
+R3362:3367 coqlib <> Entity defax
+R3362:3367 coqlib <> Entity defax
+R3397:3401 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R3397:3401 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R3459:3461 Coq.Init.Logic <> :type_scope:x_'='_x not
+R3459:3461 Coq.Init.Logic <> :type_scope:x_'='_x not
+R3559:3563 Coq.Init.Logic <> False ind
+R3559:3563 Coq.Init.Logic <> False ind
+R3568:3572 Coq.Init.Logic <> False ind
+R3568:3572 Coq.Init.Logic <> False ind
+R4382:4385 coqlib <> Most defax
+R4382:4385 coqlib <> Most defax
+R4483:4496 coqlib <> most_ex_import prfax
+R4580:4589 coqlib <> most_consv prfax
+R4617:4628 coqlib <> most_rightup prfax
+R4712:4721 coqlib <> most_consv prfax
+R4805:4816 coqlib <> most_rightup prfax

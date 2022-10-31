@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/alex/Desktop/Daniel/ccg2lambda/scripts/semparse.py", line 114, in <module>
+    main()
+  File "/home/alex/Desktop/Daniel/ccg2lambda/scripts/semparse.py", line 68, in main
+    semantic_index = SemanticIndex(args.templates)
+  File "/home/alex/Desktop/Daniel/ccg2lambda/scripts/semantic_index.py", line 32, in __init__
+    self.rules = load_semantic_rules(contents)
+  File "/home/alex/Desktop/Daniel/ccg2lambda/scripts/semantic_index.py", line 146, in load_semantic_rules
+    loaded = yaml.load(infile)
+TypeError: load() missing 1 required positional argument: 'Loader'

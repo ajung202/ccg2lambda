@@ -1,0 +1,16 @@
+File does not exist: fracas.xml_parsed/fracas_010_generalized_quantifiers.sem.xml
+usage: prove.py [-h] [--graph_out [GRAPH_OUT]] [--abduction] [--gold_trees]
+                sem
+
+The input file sem should contain the parsed sentences. All CCG trees correspond
+to the premises, except the last one, which is the hypothesis.
+
+positional arguments:
+  sem                   XML input filename with semantics
+
+options:
+  -h, --help            show this help message and exit
+  --graph_out [GRAPH_OUT]
+                        HTML graphical output filename.
+  --abduction
+  --gold_trees
