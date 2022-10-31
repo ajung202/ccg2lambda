@@ -1,0 +1,39 @@
+ERROR:root:Failed to parse \X0.exists x.((x = _jones) & _heart(_jones) & TrueP)(\x.X0(\w.TrueP,\y._beat(x,y))). Error: The function '((x = _jones) & _heart(_jones) & TrueP)' is not a Lambda Expression, an Application Expression, or a functional predicate, so it may not take arguments.
+\X0.exists x.((x = _jones) & _heart(_jones) & TrueP)(\x.X0(\w.TrueP,\y._beat(x,y)))
+                                                   ^
+ERROR:root:An error occurred: The function '((x = _jones) & _heart(_jones) & TrueP)' is not a Lambda Expression, an Application Expression, or a functional predicate, so it may not take arguments.
+\X0.exists x.((x = _jones) & _heart(_jones) & TrueP)(\x.X0(\w.TrueP,\y._beat(x,y)))
+                                                   ^
+Sentence: Smith saw Jones ' heart beat .
+Tree XML:
+<sentence>
+  <tokens>
+    <token start="0" span="1" pos="NNP" chunk="I-NP" entity="I-PER" cat="N" id="t2_0" surf="Smith" base="smith"/>
+    <token start="1" span="1" pos="VBD" chunk="I-VP" entity="O" cat="(S[dcl]\NP)/S[dcl]" id="t2_1" surf="saw" base="see"/>
+    <token start="2" span="1" pos="NNP" chunk="I-NP" entity="I-LOC" cat="N" id="t2_2" surf="Jones" base="jones"/>
+    <token start="3" span="1" pos="POS" chunk="B-NP" entity="O" cat="(NP[nb]/N)\NP" id="t2_3" surf="'" base="'"/>
+    <token start="4" span="1" pos="NN" chunk="I-NP" entity="O" cat="N" id="t2_4" surf="heart" base="heart"/>
+    <token start="5" span="1" pos="VBD" chunk="I-VP" entity="O" cat="(S[dcl]\NP)/NP" id="t2_5" surf="beat" base="beat"/>
+    <token start="6" span="1" pos="." chunk="O" entity="O" cat="." id="t2_6" surf="." base="."/>
+  </tokens>
+  <ccg root="s2_sp0" id="s2_ccg0">
+    <span root="true" id="s2_sp0" child="s2_sp1 s2_sp4" pos="None" category="S[dcl=true]/NP" rule="fc"/>
+    <span id="s2_sp1" child="s2_sp2" pos="None" category="S[X=true]/(S[X=true]\NP)" rule="tr"/>
+    <span id="s2_sp2" child="s2_sp3" pos="None" category="NP" rule="lex"/>
+    <span start="0" span="1" pos="NNP" chunk="I-NP" entity="I-PER" id="s2_sp3" surf="Smith" base="smith" terminal="t2_0" category="N"/>
+    <span id="s2_sp4" child="s2_sp5 s2_sp6" pos="None" category="(S[dcl=true]\NP)/NP" rule="fc"/>
+    <span start="1" span="1" pos="VBD" chunk="I-VP" entity="O" id="s2_sp5" surf="saw" base="see" terminal="t2_1" category="(S[dcl=true]\NP)/S[dcl=true]"/>
+    <span id="s2_sp6" child="s2_sp7 s2_sp16" pos="None" category="S[dcl=true]/NP" rule="rp"/>
+    <span id="s2_sp7" child="s2_sp8 s2_sp15" pos="None" category="S[dcl=true]/NP" rule="fc"/>
+    <span id="s2_sp8" child="s2_sp9" pos="None" category="S[X=true]/(S[X=true]\NP)" rule="tr"/>
+    <span id="s2_sp9" child="s2_sp10 s2_sp14" pos="None" category="NP[nb=true]" rule="fa"/>
+    <span id="s2_sp10" child="s2_sp11 s2_sp13" pos="None" category="NP[nb=true]/N" rule="ba"/>
+    <span id="s2_sp11" child="s2_sp12" pos="None" category="NP" rule="lex"/>
+    <span start="2" span="1" pos="NNP" chunk="I-NP" entity="I-LOC" id="s2_sp12" surf="Jones" base="jones" terminal="t2_2" category="N"/>
+    <span start="3" span="1" pos="POS" chunk="B-NP" entity="O" id="s2_sp13" surf="'" base="'" terminal="t2_3" category="(NP[nb=true]/N)\NP"/>
+    <span start="4" span="1" pos="NN" chunk="I-NP" entity="O" id="s2_sp14" surf="heart" base="heart" terminal="t2_4" category="N"/>
+    <span start="5" span="1" pos="VBD" chunk="I-VP" entity="O" id="s2_sp15" surf="beat" base="beat" terminal="t2_5" category="(S[dcl=true]\NP)/NP"/>
+    <span start="6" span="1" pos="." chunk="O" entity="O" id="s2_sp16" surf="." base="." terminal="t2_6" category="."/>
+  </ccg>
+</sentence>
+

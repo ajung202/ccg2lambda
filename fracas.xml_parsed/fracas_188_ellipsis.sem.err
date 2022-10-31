@@ -1,0 +1,44 @@
+ERROR:root:Failed to parse \Q2.Q2(\w.TrueP,\x.exists x.((x = _jones) & _proposal(_jones) & TrueP)(\y._cost(x,y))). Error: The function '((x = _jones) & _proposal(_jones) & TrueP)' is not a Lambda Expression, an Application Expression, or a functional predicate, so it may not take arguments.
+\Q2.Q2(\w.TrueP,\x.exists x.((x = _jones) & _proposal(_jones) & TrueP)(\y._cost(x,y)))
+                                                                     ^
+ERROR:root:An error occurred: The function '((x = _jones) & _proposal(_jones) & TrueP)' is not a Lambda Expression, an Application Expression, or a functional predicate, so it may not take arguments.
+\Q2.Q2(\w.TrueP,\x.exists x.((x = _jones) & _proposal(_jones) & TrueP)(\y._cost(x,y)))
+                                                                     ^
+Sentence: Jones claimed Smith had costed Jones ' proposal .
+Tree XML:
+<sentence>
+  <tokens>
+    <token start="0" span="1" pos="NNP" chunk="I-NP" entity="I-LOC" cat="N" id="t1_0" surf="Jones" base="jones"/>
+    <token start="1" span="1" pos="VBD" chunk="I-VP" entity="O" cat="(S[dcl]\NP)/S[dcl]" id="t1_1" surf="claimed" base="claim"/>
+    <token start="2" span="1" pos="NNP" chunk="I-NP" entity="I-PER" cat="N" id="t1_2" surf="Smith" base="smith"/>
+    <token start="3" span="1" pos="VBD" chunk="I-VP" entity="O" cat="(S[dcl]\NP)/(S[pt]\NP)" id="t1_3" surf="had" base="have"/>
+    <token start="4" span="1" pos="VBN" chunk="I-VP" entity="O" cat="(S[pt]\NP)/NP" id="t1_4" surf="costed" base="cost"/>
+    <token start="5" span="1" pos="NNP" chunk="I-NP" entity="I-LOC" cat="N" id="t1_5" surf="Jones" base="jones"/>
+    <token start="6" span="1" pos="POS" chunk="B-NP" entity="O" cat="(NP[nb]/N)\NP" id="t1_6" surf="'" base="'"/>
+    <token start="7" span="1" pos="NN" chunk="I-NP" entity="O" cat="N" id="t1_7" surf="proposal" base="proposal"/>
+    <token start="8" span="1" pos="." chunk="O" entity="O" cat="." id="t1_8" surf="." base="."/>
+  </tokens>
+  <ccg root="s1_sp0" id="s1_ccg0">
+    <span root="true" id="s1_sp0" child="s1_sp1 s1_sp19" pos="None" category="S[dcl=true]" rule="rp"/>
+    <span id="s1_sp1" child="s1_sp2 s1_sp4" pos="None" category="S[dcl=true]" rule="ba"/>
+    <span id="s1_sp2" child="s1_sp3" pos="None" category="NP" rule="lex"/>
+    <span start="0" span="1" pos="NNP" chunk="I-NP" entity="I-LOC" id="s1_sp3" surf="Jones" base="jones" terminal="t1_0" category="N"/>
+    <span id="s1_sp4" child="s1_sp5 s1_sp6" pos="None" category="S[dcl=true]\NP" rule="fa"/>
+    <span start="1" span="1" pos="VBD" chunk="I-VP" entity="O" id="s1_sp5" surf="claimed" base="claim" terminal="t1_1" category="(S[dcl=true]\NP)/S[dcl=true]"/>
+    <span id="s1_sp6" child="s1_sp7 s1_sp9" pos="None" category="S[dcl=true]" rule="ba"/>
+    <span id="s1_sp7" child="s1_sp8" pos="None" category="NP" rule="lex"/>
+    <span start="2" span="1" pos="NNP" chunk="I-NP" entity="I-PER" id="s1_sp8" surf="Smith" base="smith" terminal="t1_2" category="N"/>
+    <span id="s1_sp9" child="s1_sp10 s1_sp11" pos="None" category="S[dcl=true]\NP" rule="fa"/>
+    <span start="3" span="1" pos="VBD" chunk="I-VP" entity="O" id="s1_sp10" surf="had" base="have" terminal="t1_3" category="(S[dcl=true]\NP)/(S[pt=true]\NP)"/>
+    <span id="s1_sp11" child="s1_sp12 s1_sp13" pos="None" category="S[pt=true]\NP" rule="fa"/>
+    <span start="4" span="1" pos="VBN" chunk="I-VP" entity="O" id="s1_sp12" surf="costed" base="cost" terminal="t1_4" category="(S[pt=true]\NP)/NP"/>
+    <span id="s1_sp13" child="s1_sp14 s1_sp18" pos="None" category="NP[nb=true]" rule="fa"/>
+    <span id="s1_sp14" child="s1_sp15 s1_sp17" pos="None" category="NP[nb=true]/N" rule="ba"/>
+    <span id="s1_sp15" child="s1_sp16" pos="None" category="NP" rule="lex"/>
+    <span start="5" span="1" pos="NNP" chunk="I-NP" entity="I-LOC" id="s1_sp16" surf="Jones" base="jones" terminal="t1_5" category="N"/>
+    <span start="6" span="1" pos="POS" chunk="B-NP" entity="O" id="s1_sp17" surf="'" base="'" terminal="t1_6" category="(NP[nb=true]/N)\NP"/>
+    <span start="7" span="1" pos="NN" chunk="I-NP" entity="O" id="s1_sp18" surf="proposal" base="proposal" terminal="t1_7" category="N"/>
+    <span start="8" span="1" pos="." chunk="O" entity="O" id="s1_sp19" surf="." base="." terminal="t1_8" category="."/>
+  </ccg>
+</sentence>
+

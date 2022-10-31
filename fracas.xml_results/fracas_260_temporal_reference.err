@@ -1,0 +1,3 @@
+WARNING:root:Requested gold_tree has a failed semantic parse: {}
+{'status': 'failed'}
+WARNING:root:Cartesian product of semantic interpretations exhausted with i == 0

@@ -1,0 +1,58 @@
+ERROR:root:Failed to parse (exists x.(_invoice(x) & x & \F3.exists z4.(_report(z4) & x(z4) & F3(z4))) & exists x.(_project(x) & _proposal(x) & exists z3.((z3 = _itel) & TrueP & _to(x,_itel)) & x & \F3.exists z5.(_report(z5) & x(z5) & F3(z5)))). Error: 'x' is an illegal predicate name.  Individual variables may not be used as predicates.
+(exists x.(_invoice(x) & x & \F3.exists z4.(_report(z4) & x(z4) & F3(z4))) & exists x.(_project(x) & _proposal(x) & exists z3.((z3 = _itel) & TrueP & _to(x,_itel)) & x & \F3.exists z5.(_report(z5) & x(z5) & F3(z5))))
+                                                          ^
+ERROR:root:An error occurred: 'x' is an illegal predicate name.  Individual variables may not be used as predicates.
+(exists x.(_invoice(x) & x & \F3.exists z4.(_report(z4) & x(z4) & F3(z4))) & exists x.(_project(x) & _proposal(x) & exists z3.((z3 = _itel) & TrueP & _to(x,_itel)) & x & \F3.exists z5.(_report(z5) & x(z5) & F3(z5))))
+                                                          ^
+Sentence: Smith delivered a report , an invoice and a project proposal to ITEL .
+Tree XML:
+<sentence>
+  <tokens>
+    <token start="0" span="1" pos="NNP" chunk="I-NP" entity="I-PER" cat="N" id="t3_0" surf="Smith" base="smith"/>
+    <token start="1" span="1" pos="VBD" chunk="I-VP" entity="O" cat="(S[dcl]\NP)/NP" id="t3_1" surf="delivered" base="deliver"/>
+    <token start="2" span="1" pos="DT" chunk="I-NP" entity="O" cat="NP[nb]/N" id="t3_2" surf="a" base="a"/>
+    <token start="3" span="1" pos="NN" chunk="I-NP" entity="O" cat="N" id="t3_3" surf="report" base="report"/>
+    <token start="4" span="1" pos="," chunk="O" entity="O" cat="," id="t3_4" surf="," base=","/>
+    <token start="5" span="1" pos="DT" chunk="I-NP" entity="O" cat="NP[nb]/N" id="t3_5" surf="an" base="an"/>
+    <token start="6" span="1" pos="NN" chunk="I-NP" entity="O" cat="N" id="t3_6" surf="invoice" base="invoice"/>
+    <token start="7" span="1" pos="CC" chunk="O" entity="O" cat="conj" id="t3_7" surf="and" base="and"/>
+    <token start="8" span="1" pos="DT" chunk="I-NP" entity="O" cat="NP[nb]/N" id="t3_8" surf="a" base="a"/>
+    <token start="9" span="1" pos="NN" chunk="I-NP" entity="O" cat="N/N" id="t3_9" surf="project" base="project"/>
+    <token start="10" span="1" pos="NN" chunk="I-NP" entity="O" cat="N" id="t3_10" surf="proposal" base="proposal"/>
+    <token start="11" span="1" pos="TO" chunk="I-PP" entity="O" cat="(NP\NP)/NP" id="t3_11" surf="to" base="to"/>
+    <token start="12" span="1" pos="NNP" chunk="I-NP" entity="I-LOC" cat="N" id="t3_12" surf="ITEL" base="itel"/>
+    <token start="13" span="1" pos="." chunk="O" entity="O" cat="." id="t3_13" surf="." base="."/>
+  </tokens>
+  <ccg root="s3_sp0" id="s3_ccg0">
+    <span root="true" id="s3_sp0" child="s3_sp1 s3_sp28" pos="None" category="S[dcl=true]" rule="rp"/>
+    <span id="s3_sp1" child="s3_sp2 s3_sp4" pos="None" category="S[dcl=true]" rule="ba"/>
+    <span id="s3_sp2" child="s3_sp3" pos="None" category="NP" rule="lex"/>
+    <span start="0" span="1" pos="NNP" chunk="I-NP" entity="I-PER" id="s3_sp3" surf="Smith" base="smith" terminal="t3_0" category="N"/>
+    <span id="s3_sp4" child="s3_sp5 s3_sp6" pos="None" category="S[dcl=true]\NP" rule="fa"/>
+    <span start="1" span="1" pos="VBD" chunk="I-VP" entity="O" id="s3_sp5" surf="delivered" base="deliver" terminal="t3_1" category="(S[dcl=true]\NP)/NP"/>
+    <span id="s3_sp6" child="s3_sp7 s3_sp10" pos="None" category="NP" rule="ba"/>
+    <span id="s3_sp7" child="s3_sp8 s3_sp9" pos="None" category="NP[nb=true]" rule="fa"/>
+    <span start="2" span="1" pos="DT" chunk="I-NP" entity="O" id="s3_sp8" surf="a" base="a" terminal="t3_2" category="NP[nb=true]/N"/>
+    <span start="3" span="1" pos="NN" chunk="I-NP" entity="O" id="s3_sp9" surf="report" base="report" terminal="t3_3" category="N"/>
+    <span id="s3_sp10" child="s3_sp11 s3_sp12" pos="None" category="NP\NP" rule="lp"/>
+    <span start="4" span="1" pos="," chunk="O" entity="O" id="s3_sp11" surf="," base="," terminal="t3_4" category="=true,"/>
+    <span id="s3_sp12" child="s3_sp13 s3_sp16" pos="None" category="NP" rule="ba"/>
+    <span id="s3_sp13" child="s3_sp14 s3_sp15" pos="None" category="NP[nb=true]" rule="fa"/>
+    <span start="5" span="1" pos="DT" chunk="I-NP" entity="O" id="s3_sp14" surf="an" base="an" terminal="t3_5" category="NP[nb=true]/N"/>
+    <span start="6" span="1" pos="NN" chunk="I-NP" entity="O" id="s3_sp15" surf="invoice" base="invoice" terminal="t3_6" category="N"/>
+    <span id="s3_sp16" child="s3_sp17 s3_sp18" pos="None" category="NP\NP" rule="conj"/>
+    <span start="7" span="1" pos="CC" chunk="O" entity="O" id="s3_sp17" surf="and" base="and" terminal="t3_7" category="conj"/>
+    <span id="s3_sp18" child="s3_sp19 s3_sp24" pos="None" category="NP" rule="ba"/>
+    <span id="s3_sp19" child="s3_sp20 s3_sp21" pos="None" category="NP[nb=true]" rule="fa"/>
+    <span start="8" span="1" pos="DT" chunk="I-NP" entity="O" id="s3_sp20" surf="a" base="a" terminal="t3_8" category="NP[nb=true]/N"/>
+    <span id="s3_sp21" child="s3_sp22 s3_sp23" pos="None" category="N" rule="fa"/>
+    <span start="9" span="1" pos="NN" chunk="I-NP" entity="O" id="s3_sp22" surf="project" base="project" terminal="t3_9" category="N/N"/>
+    <span start="10" span="1" pos="NN" chunk="I-NP" entity="O" id="s3_sp23" surf="proposal" base="proposal" terminal="t3_10" category="N"/>
+    <span id="s3_sp24" child="s3_sp25 s3_sp26" pos="None" category="NP\NP" rule="fa"/>
+    <span start="11" span="1" pos="TO" chunk="I-PP" entity="O" id="s3_sp25" surf="to" base="to" terminal="t3_11" category="(NP\NP)/NP"/>
+    <span id="s3_sp26" child="s3_sp27" pos="None" category="NP" rule="lex"/>
+    <span start="12" span="1" pos="NNP" chunk="I-NP" entity="I-LOC" id="s3_sp27" surf="ITEL" base="itel" terminal="t3_12" category="N"/>
+    <span start="13" span="1" pos="." chunk="O" entity="O" id="s3_sp28" surf="." base="." terminal="t3_13" category="."/>
+  </ccg>
+</sentence>
+

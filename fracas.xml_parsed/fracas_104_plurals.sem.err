@@ -1,0 +1,40 @@
+ERROR:root:Failed to parse (_one(\x._more(x)) & TrueP)(\x.(_company(x) & _car(x))). Error: The function '(_one(\x._more(x)) & TrueP)' is not a Lambda Expression, an Application Expression, or a functional predicate, so it may not take arguments.
+(_one(\x._more(x)) & TrueP)(\x.(_company(x) & _car(x)))
+                          ^
+ERROR:root:An error occurred: The function '(_one(\x._more(x)) & TrueP)' is not a Lambda Expression, an Application Expression, or a functional predicate, so it may not take arguments.
+(_one(\x._more(x)) & TrueP)(\x.(_company(x) & _car(x)))
+                          ^
+Sentence: Jones has more than one company car .
+Tree XML:
+<sentence>
+  <tokens>
+    <token start="0" span="1" pos="NNP" chunk="I-NP" entity="I-LOC" cat="N" id="t2_0" surf="Jones" base="jones"/>
+    <token start="1" span="1" pos="VBZ" chunk="I-VP" entity="O" cat="(S[dcl]\NP)/NP" id="t2_1" surf="has" base="have"/>
+    <token start="2" span="1" pos="JJR" chunk="I-NP" entity="O" cat="S[adj]\NP" id="t2_2" surf="more" base="more"/>
+    <token start="3" span="1" pos="IN" chunk="I-NP" entity="O" cat="((N/N)/(N/N))\(S[adj]\NP)" id="t2_3" surf="than" base="than"/>
+    <token start="4" span="1" pos="CD" chunk="I-NP" entity="O" cat="N/N" id="t2_4" surf="one" base="one"/>
+    <token start="5" span="1" pos="NN" chunk="I-NP" entity="O" cat="N/N" id="t2_5" surf="company" base="company"/>
+    <token start="6" span="1" pos="NN" chunk="I-NP" entity="O" cat="N" id="t2_6" surf="car" base="car"/>
+    <token start="7" span="1" pos="." chunk="O" entity="O" cat="." id="t2_7" surf="." base="."/>
+  </tokens>
+  <ccg root="s2_sp0" id="s2_ccg0">
+    <span root="true" id="s2_sp0" child="s2_sp1 s2_sp16" pos="None" category="S[dcl=true]" rule="rp"/>
+    <span id="s2_sp1" child="s2_sp2 s2_sp4" pos="None" category="S[dcl=true]" rule="ba"/>
+    <span id="s2_sp2" child="s2_sp3" pos="None" category="NP" rule="lex"/>
+    <span start="0" span="1" pos="NNP" chunk="I-NP" entity="I-LOC" id="s2_sp3" surf="Jones" base="jones" terminal="t2_0" category="N"/>
+    <span id="s2_sp4" child="s2_sp5 s2_sp6" pos="None" category="S[dcl=true]\NP" rule="fa"/>
+    <span start="1" span="1" pos="VBZ" chunk="I-VP" entity="O" id="s2_sp5" surf="has" base="have" terminal="t2_1" category="(S[dcl=true]\NP)/NP"/>
+    <span id="s2_sp6" child="s2_sp7" pos="None" category="NP" rule="lex"/>
+    <span id="s2_sp7" child="s2_sp8 s2_sp13" pos="None" category="N" rule="fa"/>
+    <span id="s2_sp8" child="s2_sp9 s2_sp12" pos="None" category="N/N" rule="fa"/>
+    <span id="s2_sp9" child="s2_sp10 s2_sp11" pos="None" category="(N/N)/(N/N)" rule="ba"/>
+    <span start="2" span="1" pos="JJR" chunk="I-NP" entity="O" id="s2_sp10" surf="more" base="more" terminal="t2_2" category="S[adj=true]\NP"/>
+    <span start="3" span="1" pos="IN" chunk="I-NP" entity="O" id="s2_sp11" surf="than" base="than" terminal="t2_3" category="((N/N)/(N/N))\(S[adj=true]\NP)"/>
+    <span start="4" span="1" pos="CD" chunk="I-NP" entity="O" id="s2_sp12" surf="one" base="one" terminal="t2_4" category="N/N"/>
+    <span id="s2_sp13" child="s2_sp14 s2_sp15" pos="None" category="N" rule="fa"/>
+    <span start="5" span="1" pos="NN" chunk="I-NP" entity="O" id="s2_sp14" surf="company" base="company" terminal="t2_5" category="N/N"/>
+    <span start="6" span="1" pos="NN" chunk="I-NP" entity="O" id="s2_sp15" surf="car" base="car" terminal="t2_6" category="N"/>
+    <span start="7" span="1" pos="." chunk="O" entity="O" id="s2_sp16" surf="." base="." terminal="t2_7" category="."/>
+  </ccg>
+</sentence>
+

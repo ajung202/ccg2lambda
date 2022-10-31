@@ -1,0 +1,3 @@
+The PC-6082 is faster than the ITEL-XZ.
+The PC-6082 is slow.
+The ITEL-XZ is fast.

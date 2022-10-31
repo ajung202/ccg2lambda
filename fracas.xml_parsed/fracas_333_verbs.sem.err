@@ -1,0 +1,38 @@
+ERROR:root:Failed to parse ((exists x.((x = _anderson) & _anderson & \F2.exists x.((x = _smith) & _anderson(_smith) & F2(_smith))) & exists x.((x = _jones) & _jones & \F2.exists x.((x = _smith) & _jones(_smith) & F2(_smith))))(\w.TrueP))(\x._meet(x)). Error: The function '(exists x.((x = _anderson) & _anderson & \F2.exists x.((x = _smith) & _anderson(_smith) & F2(_smith))) & exists x.((x = _jones) & _jones & \F2.exists x.((x = _smith) & _jones(_smith) & F2(_smith))))' is not a Lambda Expression, an Application Expression, or a functional predicate, so it may not take arguments.
+((exists x.((x = _anderson) & _anderson & \F2.exists x.((x = _smith) & _anderson(_smith) & F2(_smith))) & exists x.((x = _jones) & _jones & \F2.exists x.((x = _smith) & _jones(_smith) & F2(_smith))))(\w.TrueP))(\x._meet(x))
+                                                                                                                                                                                                      ^
+ERROR:root:An error occurred: The function '(exists x.((x = _anderson) & _anderson & \F2.exists x.((x = _smith) & _anderson(_smith) & F2(_smith))) & exists x.((x = _jones) & _jones & \F2.exists x.((x = _smith) & _jones(_smith) & F2(_smith))))' is not a Lambda Expression, an Application Expression, or a functional predicate, so it may not take arguments.
+((exists x.((x = _anderson) & _anderson & \F2.exists x.((x = _smith) & _anderson(_smith) & F2(_smith))) & exists x.((x = _jones) & _jones & \F2.exists x.((x = _smith) & _jones(_smith) & F2(_smith))))(\w.TrueP))(\x._meet(x))
+                                                                                                                                                                                                      ^
+Sentence: Smith , Anderson and Jones met .
+Tree XML:
+<sentence>
+  <tokens>
+    <token start="0" span="1" pos="NNP" chunk="I-NP" entity="I-PER" cat="N" id="t0_0" surf="Smith" base="smith"/>
+    <token start="1" span="1" pos="," chunk="I-NP" entity="O" cat="," id="t0_1" surf="," base=","/>
+    <token start="2" span="1" pos="NNP" chunk="I-NP" entity="I-PER" cat="N" id="t0_2" surf="Anderson" base="anderson"/>
+    <token start="3" span="1" pos="CC" chunk="I-NP" entity="I-PER" cat="conj" id="t0_3" surf="and" base="and"/>
+    <token start="4" span="1" pos="NNP" chunk="I-NP" entity="I-PER" cat="N" id="t0_4" surf="Jones" base="jones"/>
+    <token start="5" span="1" pos="VBD" chunk="I-VP" entity="O" cat="S[dcl]\NP" id="t0_5" surf="met" base="meet"/>
+    <token start="6" span="1" pos="." chunk="O" entity="O" cat="." id="t0_6" surf="." base="."/>
+  </tokens>
+  <ccg root="s0_sp0" id="s0_ccg0">
+    <span root="true" id="s0_sp0" child="s0_sp1 s0_sp15" pos="None" category="S[dcl=true]" rule="rp"/>
+    <span id="s0_sp1" child="s0_sp2 s0_sp14" pos="None" category="S[dcl=true]" rule="ba"/>
+    <span id="s0_sp2" child="s0_sp3 s0_sp5" pos="None" category="NP" rule="ba"/>
+    <span id="s0_sp3" child="s0_sp4" pos="None" category="NP" rule="lex"/>
+    <span start="0" span="1" pos="NNP" chunk="I-NP" entity="I-PER" id="s0_sp4" surf="Smith" base="smith" terminal="t0_0" category="N"/>
+    <span id="s0_sp5" child="s0_sp6 s0_sp7" pos="None" category="NP\NP" rule="lp"/>
+    <span start="1" span="1" pos="," chunk="I-NP" entity="O" id="s0_sp6" surf="," base="," terminal="t0_1" category="=true,"/>
+    <span id="s0_sp7" child="s0_sp8 s0_sp10" pos="None" category="NP" rule="ba"/>
+    <span id="s0_sp8" child="s0_sp9" pos="None" category="NP" rule="lex"/>
+    <span start="2" span="1" pos="NNP" chunk="I-NP" entity="I-PER" id="s0_sp9" surf="Anderson" base="anderson" terminal="t0_2" category="N"/>
+    <span id="s0_sp10" child="s0_sp11 s0_sp12" pos="None" category="NP\NP" rule="conj"/>
+    <span start="3" span="1" pos="CC" chunk="I-NP" entity="I-PER" id="s0_sp11" surf="and" base="and" terminal="t0_3" category="conj"/>
+    <span id="s0_sp12" child="s0_sp13" pos="None" category="NP" rule="lex"/>
+    <span start="4" span="1" pos="NNP" chunk="I-NP" entity="I-PER" id="s0_sp13" surf="Jones" base="jones" terminal="t0_4" category="N"/>
+    <span start="5" span="1" pos="VBD" chunk="I-VP" entity="O" id="s0_sp14" surf="met" base="meet" terminal="t0_5" category="S[dcl=true]\NP"/>
+    <span start="6" span="1" pos="." chunk="O" entity="O" id="s0_sp15" surf="." base="." terminal="t0_6" category="."/>
+  </ccg>
+</sentence>
+

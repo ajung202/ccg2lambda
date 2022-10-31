@@ -1,298 +1,98 @@
 Welcome to Coq 8.3pl5 (August 2022)
 
 Coq <
-Coq < _for is assumed
+Coq < _clause is assumed
 
-Coq < _irishman is assumed
+Coq < _contract is assumed
 
-Coq < _literature is assumed
+Coq < _cross is assumed
 
-Coq < _nobel is assumed
+Coq < _crucial is assumed
 
-Coq < _noble is assumed
+Coq < _jones is assumed
 
-Coq < _prize is assumed
+Coq < _out is assumed
 
-Coq < _win is assumed
+Coq < _see is assumed
+
+Coq < _sign is assumed
+
+Coq < _smith is assumed
 
 Coq < 1 subgoal
 
 ============================
 (exists x : Entity,
-(_irishman x /\ True) /\
-(exists z2 : Entity,
-(((_noble z2 /\ _prize z2) /\
-(exists z1 : Entity, (_literature z1 /\ True) /\ _for z2 z1)) /\
-True) /\ _win x z2)) ->
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(_out _jones /\
+(exists z4 : Entity,
+((_crucial z4 /\ _clause z4) /\ True) /\ _cross _jones z4) \/
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))) ->
 exists x : Entity,
-(_irishman x /\ True) /\
-(exists z1 : Entity, ((_nobel z1 /\ _prize z1) /\ True) /\ _win x z1)
+(x = _smith /\ True) /\
+((exists z3 : Entity,
+(((z3 = _jones /\ True) /\ _see _smith _jones) /\ _out _jones) /\
+(exists z5 : Entity,
+((_crucial z5 /\ _clause z5) /\ True) /\ _cross _jones z5)) \/
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))
 
-
-1 subgoal
-
-============================
-(exists x : Entity,
-(_irishman x /\ True) /\
-(exists z2 : Entity,
-(((_noble z2 /\ _prize z2) /\
-(exists z1 : Entity, (_literature z1 /\ True) /\ _for z2 z1)) /\
-True) /\ _win x z2)) ->
-exists x : Entity,
-(_irishman x /\ True) /\
-(exists z1 : Entity, ((_nobel z1 /\ _prize z1) /\ True) /\ _win x z1)
-
-
-1 subgoal
-
-============================
-(exists x : Entity,
-(_irishman x /\ True) /\
-(exists z2 : Entity,
-(((_noble z2 /\ _prize z2) /\
-(exists z1 : Entity, (_literature z1 /\ True) /\ _for z2 z1)) /\
-True) /\ _win x z2)) ->
-exists x : Entity,
-(_irishman x /\ True) /\
-(exists z1 : Entity, ((_nobel z1 /\ _prize z1) /\ True) /\ _win x z1)
+Proof completed.
 
 nltac.
-nltac.
-<Your Tactic Text here>
-Error: Attempt to save an incomplete proof
 
-t1 <
-
-Theorem is not defined
+t1 is defined
 Welcome to Coq 8.3pl5 (August 2022)
 
 Coq <
-Coq < _for is assumed
+Coq < _clause is assumed
 
-Coq < _irishman is assumed
+Coq < _contract is assumed
 
-Coq < _literature is assumed
+Coq < _cross is assumed
 
-Coq < _nobel is assumed
+Coq < _crucial is assumed
 
-Coq < _noble is assumed
+Coq < _jones is assumed
 
-Coq < _prize is assumed
+Coq < _out is assumed
 
-Coq < _win is assumed
+Coq < _see is assumed
 
-Coq < 1 subgoal
+Coq < _sign is assumed
 
-============================
-(exists x : Entity,
-(_irishman x /\ True) /\
-(exists z2 : Entity,
-(((_noble z2 /\ _prize z2) /\
-(exists z1 : Entity, (_literature z1 /\ True) /\ _for z2 z1)) /\
-True) /\ _win x z2)) ->
-~
-(exists x : Entity,
-(_irishman x /\ True) /\
-(exists z1 : Entity, ((_nobel z1 /\ _prize z1) /\ True) /\ _win x z1))
-
-
-1 subgoal
-
-============================
-(exists x : Entity,
-(_irishman x /\ True) /\
-(exists z2 : Entity,
-(((_noble z2 /\ _prize z2) /\
-(exists z1 : Entity, (_literature z1 /\ True) /\ _for z2 z1)) /\
-True) /\ _win x z2)) ->
-~
-(exists x : Entity,
-(_irishman x /\ True) /\
-(exists z1 : Entity, ((_nobel z1 /\ _prize z1) /\ True) /\ _win x z1))
-
-
-1 subgoal
-
-============================
-(exists x : Entity,
-(_irishman x /\ True) /\
-(exists z2 : Entity,
-(((_noble z2 /\ _prize z2) /\
-(exists z1 : Entity, (_literature z1 /\ True) /\ _for z2 z1)) /\
-True) /\ _win x z2)) ->
-~
-(exists x : Entity,
-(_irishman x /\ True) /\
-(exists z1 : Entity, ((_nobel z1 /\ _prize z1) /\ True) /\ _win x z1))
-
-nltac.
-nltac.
-<Your Tactic Text here>
-Error: Attempt to save an incomplete proof
-
-t1 <
-
-Theorem is not defined
-Welcome to Coq 8.3pl5 (August 2022)
-
-Coq <
-Coq < _for is assumed
-
-Coq < _irishman is assumed
-
-Coq < _literature is assumed
-
-Coq < _nobel is assumed
-
-Coq < _noble is assumed
-
-Coq < _prize is assumed
-
-Coq < _win is assumed
+Coq < _smith is assumed
 
 Coq < 1 subgoal
 
 ============================
 (exists x : Entity,
-(_irishman x /\ True) /\
-(exists z2 : Entity,
-(((_noble z2 /\ _prize z2) /\
-(exists z1 : Entity, (_literature z1 /\ True) /\ _for z2 z1)) /\
-True) /\ _win x z2)) ->
+(x = _smith /\ True) /\
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(_out _jones /\
+(exists z4 : Entity,
+((_crucial z4 /\ _clause z4) /\ True) /\ _cross _jones z4) \/
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))) ->
 exists x : Entity,
-(_irishman x /\ True) /\
-(exists z1 : Entity, ((_nobel z1 /\ _prize z1) /\ True) /\ _win x z1)
+(x = _smith /\ True) /\
+((exists z3 : Entity,
+(((z3 = _jones /\ True) /\ _see _smith _jones) /\ _out _jones) /\
+(exists z5 : Entity,
+((_crucial z5 /\ _clause z5) /\ True) /\ _cross _jones z5)) \/
+(exists z1 : Entity,
+((z1 = _jones /\ True) /\ _see _smith _jones) /\
+(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))
 
-1 subgoal
+Proof completed.
 
-x : Entity
-H : _irishman x
-H1 : True
-x0 : Entity
-H2 : _win x x0
-H3 : True
-H0 : _noble x0
-H5 : _prize x0
-x1 : Entity
-H6 : _for x0 x1
-H4 : _literature x1
-H7 : True
-============================
-_nobel x0
-
-1 subgoal
-
-x : Entity
-H : _irishman x
-H1 : True
-x0 : Entity
-H2 : _win x x0
-H3 : True
-H0 : _noble x0
-H5 : _prize x0
-x1 : Entity
-H6 : _for x0 x1
-H4 : _literature x1
-H7 : True
-============================
-_nobel x0
+Error: No such subgoal
 
 repeat nltac_base.
-try substitution.
-<Your Tactic Text here>
-Error: Attempt to save an incomplete proof
 
-t1 <
-
-Theorem is not defined
-Welcome to Coq 8.3pl5 (August 2022)
-
-Coq <
-Coq < _for is assumed
-
-Coq < _irishman is assumed
-
-Coq < _literature is assumed
-
-Coq < _nobel is assumed
-
-Coq < _noble is assumed
-
-Coq < _prize is assumed
-
-Coq < _win is assumed
-
-Coq < 1 subgoal
-
-============================
-(exists x : Entity,
-(_irishman x /\ True) /\
-(exists z2 : Entity,
-(((_noble z2 /\ _prize z2) /\
-(exists z1 : Entity, (_literature z1 /\ True) /\ _for z2 z1)) /\
-True) /\ _win x z2)) ->
-~
-(exists x : Entity,
-(_irishman x /\ True) /\
-(exists z1 : Entity, ((_nobel z1 /\ _prize z1) /\ True) /\ _win x z1))
-
-1 subgoal
-
-x : Entity
-H : _irishman x
-H2 : True
-x0 : Entity
-H3 : _win x x0
-H4 : True
-H1 : _noble x0
-H6 : _prize x0
-x1 : Entity
-H7 : _for x0 x1
-H5 : _literature x1
-H8 : True
-x2 : Entity
-H0 : _irishman x2
-H10 : True
-x3 : Entity
-H11 : _win x2 x3
-H12 : True
-H9 : _nobel x3
-H13 : _prize x3
-============================
-False
-
-1 subgoal
-
-x : Entity
-H : _irishman x
-H2 : True
-x0 : Entity
-H3 : _win x x0
-H4 : True
-H1 : _noble x0
-H6 : _prize x0
-x1 : Entity
-H7 : _for x0 x1
-H5 : _literature x1
-H8 : True
-x2 : Entity
-H0 : _irishman x2
-H10 : True
-x3 : Entity
-H11 : _win x2 x3
-H12 : True
-H9 : _nobel x3
-H13 : _prize x3
-============================
-False
-
-repeat nltac_base.
-try substitution.
-<Your Tactic Text here>
-Error: Attempt to save an incomplete proof
-
-t1 <
-
-Theorem is not defined
-unknown
+t1 is defined
+yes
 

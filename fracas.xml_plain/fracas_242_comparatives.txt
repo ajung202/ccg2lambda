@@ -1,0 +1,3 @@
+The PC-6082 is faster than 500 MIPS.
+The ITEL-ZX is slower than 500 MIPS.
+The PC-6082 is faster than the ITEL-ZX.

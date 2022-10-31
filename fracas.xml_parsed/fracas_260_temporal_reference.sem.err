@@ -1,0 +1,40 @@
+ERROR:root:Failed to parse \F2.exists x.(_13th(x) & x(\w.TrueP,\z3.(_friday(z3) & exists z1.(_contract(z1) & TrueP & _sign(z3,z1)))) & F2(x)). Error: 'x' is an illegal predicate name.  Individual variables may not be used as predicates.
+\F2.exists x.(_13th(x) & x(\w.TrueP,\z3.(_friday(z3) & exists z1.(_contract(z1) & TrueP & _sign(z3,z1)))) & F2(x))
+                         ^
+ERROR:root:An error occurred: 'x' is an illegal predicate name.  Individual variables may not be used as predicates.
+\F2.exists x.(_13th(x) & x(\w.TrueP,\z3.(_friday(z3) & exists z1.(_contract(z1) & TrueP & _sign(z3,z1)))) & F2(x))
+                         ^
+Sentence: APCOM signed the contract Friday , 13th .
+Tree XML:
+<sentence>
+  <tokens>
+    <token start="0" span="1" pos="NNP" chunk="I-NP" entity="I-ORG" cat="N" id="t2_0" surf="APCOM" base="apcom"/>
+    <token start="1" span="1" pos="VBD" chunk="I-VP" entity="O" cat="(S[dcl]\NP)/NP" id="t2_1" surf="signed" base="sign"/>
+    <token start="2" span="1" pos="DT" chunk="I-NP" entity="O" cat="NP[nb]/N" id="t2_2" surf="the" base="the"/>
+    <token start="3" span="1" pos="NN" chunk="I-NP" entity="O" cat="N" id="t2_3" surf="contract" base="contract"/>
+    <token start="4" span="1" pos="NNP" chunk="B-NP" entity="I-DAT" cat="(S\NP)\(S\NP)" id="t2_4" surf="Friday" base="friday"/>
+    <token start="5" span="1" pos="," chunk="O" entity="I-DAT" cat="," id="t2_5" surf="," base=","/>
+    <token start="6" span="1" pos="NN" chunk="I-NP" entity="I-DAT" cat="N" id="t2_6" surf="13th" base="13th"/>
+    <token start="7" span="1" pos="." chunk="O" entity="O" cat="." id="t2_7" surf="." base="."/>
+  </tokens>
+  <ccg root="s2_sp0" id="s2_ccg0">
+    <span root="true" id="s2_sp0" child="s2_sp1 s2_sp16" pos="None" category="S[dcl=true]" rule="rp"/>
+    <span id="s2_sp1" child="s2_sp2 s2_sp4" pos="None" category="S[dcl=true]" rule="ba"/>
+    <span id="s2_sp2" child="s2_sp3" pos="None" category="NP" rule="lex"/>
+    <span start="0" span="1" pos="NNP" chunk="I-NP" entity="I-ORG" id="s2_sp3" surf="APCOM" base="apcom" terminal="t2_0" category="N"/>
+    <span id="s2_sp4" child="s2_sp5 s2_sp12" pos="None" category="S[dcl=true]\NP" rule="ba"/>
+    <span id="s2_sp5" child="s2_sp6 s2_sp11" pos="None" category="S[dcl=true]\NP" rule="ba"/>
+    <span id="s2_sp6" child="s2_sp7 s2_sp8" pos="None" category="S[dcl=true]\NP" rule="fa"/>
+    <span start="1" span="1" pos="VBD" chunk="I-VP" entity="O" id="s2_sp7" surf="signed" base="sign" terminal="t2_1" category="(S[dcl=true]\NP)/NP"/>
+    <span id="s2_sp8" child="s2_sp9 s2_sp10" pos="None" category="NP[nb=true]" rule="fa"/>
+    <span start="2" span="1" pos="DT" chunk="I-NP" entity="O" id="s2_sp9" surf="the" base="the" terminal="t2_2" category="NP[nb=true]/N"/>
+    <span start="3" span="1" pos="NN" chunk="I-NP" entity="O" id="s2_sp10" surf="contract" base="contract" terminal="t2_3" category="N"/>
+    <span start="4" span="1" pos="NNP" chunk="B-NP" entity="I-DAT" id="s2_sp11" surf="Friday" base="friday" terminal="t2_4" category="(S\NP)\(S\NP)"/>
+    <span id="s2_sp12" child="s2_sp13 s2_sp14" pos="None" category="(S[X=true]\NP)\(S[X=true]\NP)" rule="ltc"/>
+    <span start="5" span="1" pos="," chunk="O" entity="I-DAT" id="s2_sp13" surf="," base="," terminal="t2_5" category="=true,"/>
+    <span id="s2_sp14" child="s2_sp15" pos="None" category="NP" rule="lex"/>
+    <span start="6" span="1" pos="NN" chunk="I-NP" entity="I-DAT" id="s2_sp15" surf="13th" base="13th" terminal="t2_6" category="N"/>
+    <span start="7" span="1" pos="." chunk="O" entity="O" id="s2_sp16" surf="." base="." terminal="t2_7" category="."/>
+  </ccg>
+</sentence>
+

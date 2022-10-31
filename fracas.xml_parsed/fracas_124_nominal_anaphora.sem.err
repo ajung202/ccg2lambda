@@ -1,0 +1,40 @@
+ERROR:root:Failed to parse (exists z1.(_ten(z1) & _machine(z1) & TrueP & _of(\F1 F2.exists x.(_two(x) & F1(x) & F2(x)),z1))(\w.TrueP))(\x.(_be(x) & Prog(_miss(x)))). Error: The function '(_ten(z1) & _machine(z1) & TrueP & _of(\F1 F2.exists x.(_two(x) & F1(x) & F2(x)),z1))' is not a Lambda Expression, an Application Expression, or a functional predicate, so it may not take arguments.
+(exists z1.(_ten(z1) & _machine(z1) & TrueP & _of(\F1 F2.exists x.(_two(x) & F1(x) & F2(x)),z1))(\w.TrueP))(\x.(_be(x) & Prog(_miss(x))))
+                                                                                               ^
+ERROR:root:An error occurred: The function '(_ten(z1) & _machine(z1) & TrueP & _of(\F1 F2.exists x.(_two(x) & F1(x) & F2(x)),z1))' is not a Lambda Expression, an Application Expression, or a functional predicate, so it may not take arguments.
+(exists z1.(_ten(z1) & _machine(z1) & TrueP & _of(\F1 F2.exists x.(_two(x) & F1(x) & F2(x)),z1))(\w.TrueP))(\x.(_be(x) & Prog(_miss(x))))
+                                                                                               ^
+Sentence: Two out of ten machines are missing .
+Tree XML:
+<sentence>
+  <tokens>
+    <token start="0" span="1" pos="CD" chunk="I-NP" entity="O" cat="N" id="t0_0" surf="Two" base="two"/>
+    <token start="1" span="1" pos="IN" chunk="I-PP" entity="O" cat="(NP\NP)/PP" id="t0_1" surf="out" base="out"/>
+    <token start="2" span="1" pos="IN" chunk="B-PP" entity="O" cat="PP/NP" id="t0_2" surf="of" base="of"/>
+    <token start="3" span="1" pos="JJ" chunk="I-NP" entity="O" cat="N/N" id="t0_3" surf="ten" base="ten"/>
+    <token start="4" span="1" pos="NNS" chunk="I-NP" entity="O" cat="N" id="t0_4" surf="machines" base="machine"/>
+    <token start="5" span="1" pos="VBP" chunk="I-VP" entity="O" cat="(S[dcl]\NP)/(S[ng]\NP)" id="t0_5" surf="are" base="be"/>
+    <token start="6" span="1" pos="VBG" chunk="I-VP" entity="O" cat="S[ng]\NP" id="t0_6" surf="missing" base="miss"/>
+    <token start="7" span="1" pos="." chunk="O" entity="O" cat="." id="t0_7" surf="." base="."/>
+  </tokens>
+  <ccg root="s0_sp0" id="s0_ccg0">
+    <span root="true" id="s0_sp0" child="s0_sp1 s0_sp16" pos="None" category="S[dcl=true]" rule="rp"/>
+    <span id="s0_sp1" child="s0_sp2 s0_sp13" pos="None" category="S[dcl=true]" rule="ba"/>
+    <span id="s0_sp2" child="s0_sp3 s0_sp5" pos="None" category="NP" rule="ba"/>
+    <span id="s0_sp3" child="s0_sp4" pos="None" category="NP" rule="lex"/>
+    <span start="0" span="1" pos="CD" chunk="I-NP" entity="O" id="s0_sp4" surf="Two" base="two" terminal="t0_0" category="N"/>
+    <span id="s0_sp5" child="s0_sp6 s0_sp7" pos="None" category="NP\NP" rule="fa"/>
+    <span start="1" span="1" pos="IN" chunk="I-PP" entity="O" id="s0_sp6" surf="out" base="out" terminal="t0_1" category="(NP\NP)/PP"/>
+    <span id="s0_sp7" child="s0_sp8 s0_sp9" pos="None" category="PP" rule="fa"/>
+    <span start="2" span="1" pos="IN" chunk="B-PP" entity="O" id="s0_sp8" surf="of" base="of" terminal="t0_2" category="PP/NP"/>
+    <span id="s0_sp9" child="s0_sp10" pos="None" category="NP" rule="lex"/>
+    <span id="s0_sp10" child="s0_sp11 s0_sp12" pos="None" category="N" rule="fa"/>
+    <span start="3" span="1" pos="JJ" chunk="I-NP" entity="O" id="s0_sp11" surf="ten" base="ten" terminal="t0_3" category="N/N"/>
+    <span start="4" span="1" pos="NNS" chunk="I-NP" entity="O" id="s0_sp12" surf="machines" base="machine" terminal="t0_4" category="N"/>
+    <span id="s0_sp13" child="s0_sp14 s0_sp15" pos="None" category="S[dcl=true]\NP" rule="fa"/>
+    <span start="5" span="1" pos="VBP" chunk="I-VP" entity="O" id="s0_sp14" surf="are" base="be" terminal="t0_5" category="(S[dcl=true]\NP)/(S[ng=true]\NP)"/>
+    <span start="6" span="1" pos="VBG" chunk="I-VP" entity="O" id="s0_sp15" surf="missing" base="miss" terminal="t0_6" category="S[ng=true]\NP"/>
+    <span start="7" span="1" pos="." chunk="O" entity="O" id="s0_sp16" surf="." base="." terminal="t0_7" category="."/>
+  </ccg>
+</sentence>
+
