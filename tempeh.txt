@@ -1,98 +1,190 @@
 Welcome to Coq 8.3pl5 (August 2022)
 
+Coq < Error: Cannot find library coqlib in loadpath
+
+Coq < Toplevel input, characters 16-22:
+> Parameter _an : Entity -> Prop.
+>                 ^^^^^^
+Error: The reference Entity was not found in the current environment.
+
+Coq < Toplevel input, characters 31-37:
+> Parameter _become : Entity -> (Entity -> Prop).
+>                                ^^^^^^
+Error: The reference Entity was not found in the current environment.
+
+Coq < Toplevel input, characters 22-28:
+> Parameter _greatest : Entity -> Prop.
+>                       ^^^^^^
+Error: The reference Entity was not found in the current environment.
+
+Coq < Toplevel input, characters 21-27:
+> Parameter _italian : Entity -> Prop.
+>                      ^^^^^^
+Error: The reference Entity was not found in the current environment.
+
+Coq < Toplevel input, characters 19-25:
+> Parameter _tenor : Entity -> Prop.
+>                    ^^^^^^
+Error: The reference Entity was not found in the current environment.
+
+Coq < Toplevel input, characters 19-25:
+> Parameter _world : Entity -> Prop.
+>                    ^^^^^^
+Error: The reference Entity was not found in the current environment.
+
+Coq < Toplevel input, characters 219-221:
+> Theorem t1: (True (fun x => (and (_an x) (_italian x))) (fun x => (exists z3, (and (and (and (and (exists z2, (and (and (_world z2) True) (Rel z3 z2))) (_greatest z3)) (_tenor z3)) True) (_become x z3))))) -> (exists x z4, (and (and (and (_italian z4) (exists z2, (and (and (and (and (exists z1, (and (and (_world z1) True) (Rel z2 z1))) (_greatest z2)) (_tenor z2)) True) (_become z4 z2)))) True) (x = z4))).
+>                                                                                                                                                                                                                            ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
 Coq <
-Coq < _clause is assumed
 
-Coq < _contract is assumed
-
-Coq < _cross is assumed
-
-Coq < _crucial is assumed
-
-Coq < _jones is assumed
-
-Coq < _out is assumed
-
-Coq < _see is assumed
-
-Coq < _sign is assumed
-
-Coq < _smith is assumed
-
-Coq < 1 subgoal
-
-============================
-(exists x : Entity,
-(x = _smith /\ True) /\
-(exists z1 : Entity,
-((z1 = _jones /\ True) /\ _see _smith _jones) /\
-(_out _jones /\
-(exists z4 : Entity,
-((_crucial z4 /\ _clause z4) /\ True) /\ _cross _jones z4) \/
-(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))) ->
-exists x : Entity,
-(x = _smith /\ True) /\
-((exists z3 : Entity,
-(((z3 = _jones /\ True) /\ _see _smith _jones) /\ _out _jones) /\
-(exists z5 : Entity,
-((_crucial z5 /\ _clause z5) /\ True) /\ _cross _jones z5)) \/
-(exists z1 : Entity,
-((z1 = _jones /\ True) /\ _see _smith _jones) /\
-(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))
-
-Proof completed.
-
-nltac.
-
-t1 is defined
+Theorem is not defined
 Welcome to Coq 8.3pl5 (August 2022)
 
+Coq < Error: Cannot find library coqlib in loadpath
+
+Coq < Toplevel input, characters 16-22:
+> Parameter _an : Entity -> Prop.
+>                 ^^^^^^
+Error: The reference Entity was not found in the current environment.
+
+Coq < Toplevel input, characters 31-37:
+> Parameter _become : Entity -> (Entity -> Prop).
+>                                ^^^^^^
+Error: The reference Entity was not found in the current environment.
+
+Coq < Toplevel input, characters 22-28:
+> Parameter _greatest : Entity -> Prop.
+>                       ^^^^^^
+Error: The reference Entity was not found in the current environment.
+
+Coq < Toplevel input, characters 21-27:
+> Parameter _italian : Entity -> Prop.
+>                      ^^^^^^
+Error: The reference Entity was not found in the current environment.
+
+Coq < Toplevel input, characters 19-25:
+> Parameter _tenor : Entity -> Prop.
+>                    ^^^^^^
+Error: The reference Entity was not found in the current environment.
+
+Coq < Toplevel input, characters 19-25:
+> Parameter _world : Entity -> Prop.
+>                    ^^^^^^
+Error: The reference Entity was not found in the current environment.
+
+Coq < Toplevel input, characters 224-226:
+> Theorem t1: (True (fun x => (and (_an x) (_italian x))) (fun x => (exists z3, (and (and (and (and (exists z2, (and (and (_world z2) True) (Rel z3 z2))) (_greatest z3)) (_tenor z3)) True) (_become x z3))))) -> (not (exists x z4, (and (and (and (_italian z4) (exists z2, (and (and (and (and (exists z1, (and (and (_world z1) True) (Rel z2 z1))) (_greatest z2)) (_tenor z2)) True) (_become z4 z2)))) True) (x = z4)))).
+>                                                                                                                                                                                                                                 ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
 Coq <
-Coq < _clause is assumed
 
-Coq < _contract is assumed
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
 
-Coq < _cross is assumed
+Coq < Error: Cannot find library coqlib in loadpath
 
-Coq < _crucial is assumed
+Coq < Toplevel input, characters 16-22:
+> Parameter _an : Entity -> Prop.
+>                 ^^^^^^
+Error: The reference Entity was not found in the current environment.
 
-Coq < _jones is assumed
+Coq < Toplevel input, characters 31-37:
+> Parameter _become : Entity -> (Entity -> Prop).
+>                                ^^^^^^
+Error: The reference Entity was not found in the current environment.
 
-Coq < _out is assumed
+Coq < Toplevel input, characters 22-28:
+> Parameter _greatest : Entity -> Prop.
+>                       ^^^^^^
+Error: The reference Entity was not found in the current environment.
 
-Coq < _see is assumed
+Coq < Toplevel input, characters 21-27:
+> Parameter _italian : Entity -> Prop.
+>                      ^^^^^^
+Error: The reference Entity was not found in the current environment.
 
-Coq < _sign is assumed
+Coq < Toplevel input, characters 19-25:
+> Parameter _tenor : Entity -> Prop.
+>                    ^^^^^^
+Error: The reference Entity was not found in the current environment.
 
-Coq < _smith is assumed
+Coq < Toplevel input, characters 19-25:
+> Parameter _world : Entity -> Prop.
+>                    ^^^^^^
+Error: The reference Entity was not found in the current environment.
 
-Coq < 1 subgoal
+Coq < Toplevel input, characters 219-221:
+> Theorem t1: (True (fun x => (and (_an x) (_italian x))) (fun x => (exists z3, (and (and (and (and (exists z2, (and (and (_world z2) True) (Rel z3 z2))) (_greatest z3)) (_tenor z3)) True) (_become x z3))))) -> (exists x z4, (and (and (and (_italian z4) (exists z2, (and (and (and (and (exists z1, (and (and (_world z1) True) (Rel z2 z1))) (_greatest z2)) (_tenor z2)) True) (_become z4 z2)))) True) (x = z4))).
+>                                                                                                                                                                                                                            ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
 
-============================
-(exists x : Entity,
-(x = _smith /\ True) /\
-(exists z1 : Entity,
-((z1 = _jones /\ True) /\ _see _smith _jones) /\
-(_out _jones /\
-(exists z4 : Entity,
-((_crucial z4 /\ _clause z4) /\ True) /\ _cross _jones z4) \/
-(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))) ->
-exists x : Entity,
-(x = _smith /\ True) /\
-((exists z3 : Entity,
-(((z3 = _jones /\ True) /\ _see _smith _jones) /\ _out _jones) /\
-(exists z5 : Entity,
-((_crucial z5 /\ _clause z5) /\ True) /\ _cross _jones z5)) \/
-(exists z1 : Entity,
-((z1 = _jones /\ True) /\ _see _smith _jones) /\
-(exists z2 : Entity, (_contract z2 /\ True) /\ _sign _jones z2)))
+Error: Unknown command of the non proof-editing mode.
 
-Proof completed.
+Error: Unknown command of the non proof-editing mode.
 
-Error: No such subgoal
+Error: No focused proof (No proof-editing in progress).
 
-repeat nltac_base.
+Coq <
 
-t1 is defined
-yes
+Theorem is not defined
+Welcome to Coq 8.3pl5 (August 2022)
+
+Coq < Error: Cannot find library coqlib in loadpath
+
+Coq < Toplevel input, characters 16-22:
+> Parameter _an : Entity -> Prop.
+>                 ^^^^^^
+Error: The reference Entity was not found in the current environment.
+
+Coq < Toplevel input, characters 31-37:
+> Parameter _become : Entity -> (Entity -> Prop).
+>                                ^^^^^^
+Error: The reference Entity was not found in the current environment.
+
+Coq < Toplevel input, characters 22-28:
+> Parameter _greatest : Entity -> Prop.
+>                       ^^^^^^
+Error: The reference Entity was not found in the current environment.
+
+Coq < Toplevel input, characters 21-27:
+> Parameter _italian : Entity -> Prop.
+>                      ^^^^^^
+Error: The reference Entity was not found in the current environment.
+
+Coq < Toplevel input, characters 19-25:
+> Parameter _tenor : Entity -> Prop.
+>                    ^^^^^^
+Error: The reference Entity was not found in the current environment.
+
+Coq < Toplevel input, characters 19-25:
+> Parameter _world : Entity -> Prop.
+>                    ^^^^^^
+Error: The reference Entity was not found in the current environment.
+
+Coq < Toplevel input, characters 224-226:
+> Theorem t1: (True (fun x => (and (_an x) (_italian x))) (fun x => (exists z3, (and (and (and (and (exists z2, (and (and (_world z2) True) (Rel z3 z2))) (_greatest z3)) (_tenor z3)) True) (_become x z3))))) -> (not (exists x z4, (and (and (and (_italian z4) (exists z2, (and (and (and (and (exists z1, (and (and (_world z1) True) (Rel z2 z1))) (_greatest z2)) (_tenor z2)) True) (_become z4 z2)))) True) (x = z4)))).
+>                                                                                                                                                                                                                                 ^^
+Syntax error: ':' or ',' expected after [Prim.name] (in [constr:binder_constr]).
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: Unknown command of the non proof-editing mode.
+
+Error: No focused proof (No proof-editing in progress).
+
+Coq <
+
+Theorem is not defined
+unknown
 
