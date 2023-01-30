@@ -19,7 +19,7 @@ To preface, this will make more sense if you read the section on using the seman
 
 This only seems to work on Linux operating systems. In order to make it work, on top of cloning this repository, you need to clone learninbyreading. The most important part you should follow in learningbyreading is the Installation of the C&C tools.
 
-##Downloading Opam and Coq
+## Downloading Opam and Coq
 
 Run these lines in the terminal:
 ```
