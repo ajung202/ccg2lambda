@@ -7,7 +7,7 @@ natural language sentences given CCG derivation trees and semantic templates.
 
 This is a fork of ```https://github.com/mynlp/ccg2lambda```
 
-It contains a newer, working, rewritten interface with Boxer and C&C, found in Valerio Basile's learningbyreading. Here is the link to the repository: ```https://github.com/valeriobasile/learningbyreading```
+It contains a newer, working, rewritten interface with C&C, found in Valerio Basile's learningbyreading. Here is the link to the repository: ```https://github.com/valeriobasile/learningbyreading```.
 
 These are the changes to the Python code:
 1) In ccg2lambda/scripts/semantic_index.py, the yaml loader needs an additional argument as such. Modify from ``` yaml.load(infile)``` to ```yaml.load(infile, Loader = yaml.FullLoader)```
@@ -15,16 +15,31 @@ These are the changes to the Python code:
 3) In ccg2lambda/scripts/visualization_tools.py, add ```import html``` above ```import cgi```
 4) In ccg2lambda/scripts/visualization_tools.py, replace the three instances of ```cgi.escape(...)``` with ```htmi.escape(...)```
 
-To preface, this will make more sense if you read the section on using the semantic parser. After tokenizing the input, you need to have C&C / candc. I had better luck following the alternative instructions. As you can see in my ccg2lambda/executeAll.sh, my pathname on my machine to C&C is ```/home/alex/Desktop/Daniel/learningbyreading/ext/candc/bin/candc```
+To preface, this will make more sense if you read the section on using the semantic parser. After tokenizing the input, you need to have C&C / candc. I had better luck following the alternative instructions: ```https://github.com/valeriobasile/learningbyreading#installation-of-the-cc-tools-and-boxer```. As you can see in my ccg2lambda/executeAll.sh, my pathname on my machine to C&C is ```/home/alex/Desktop/Daniel/learningbyreading/ext/candc/bin/candc```
 
-This only seems to work on Linux operating systems. In order to make it work, on top of cloning this repository, you need to clone learninbyreading. The most important part you should follow in learningbyreading is the Installation of the C&C tools and Boxer.
+This only seems to work on Linux operating systems. In order to make it work, on top of cloning this repository, you need to clone learninbyreading. The most important part you should follow in learningbyreading is the Installation of the C&C tools.
 
-## Added Execution File
+##Downloading Opam and Coq
 
-Before running this, you must execute ```eval $(opam env)``` every time after restarting the terminal or the computer.
+Run these lines in the terminal:
+```
+sudo apt install opam
+opam init
+opam switch create 4.01.0
+eval $(opam env --switch==4.01.0)
+ocaml -version
+opam pin add coq 8.4pl
+```
 
-An easy way to run the system is to mimic the ```ccg2lambda/executeAll.sh```. Line 1 takes in input from the terminal to be used as the filename for the result. Line 2 tokenizes the setnece from ```sample_en.txt``` and saves it into ```en/sentences.tok```. Lines 3-6 have explanations given in the Using the Semantic Parser section of the ReadMe. Line 7 copies the result from ```tempeh.txt```, which was written by the python script ```ccg2lambda/scripts/prove.py``` onto the file allocated in Line 1.
+The above opam and coq versions might not be available at the time of downloading. Download the oldest version of opam and oldest version greater than or equal to 8.4pl of Coq.
 
+## Added Execution Script
+
+Before running this, you must execute ```eval $(opam env)``` and ```coqc coqlib.v``` every time after restarting the terminal or the computer.
+
+An easy way to run the system is to mimic the ```ccg2lambda/executeAll.sh```. Be careful of the directory structure in the shell script of ```executeAll.sh```, for it will differ. Line 1 takes in input from the terminal to be used as the filename for the result. Line 2 tokenizes the setnece from ```sample_en.txt``` and saves it into ```en/sentences.tok```. Lines 3-6 have explanations given in the Using the Semantic Parser section of the ReadMe. Line 7 copies the result from ```tempeh.txt```, which was written by the python script ```ccg2lambda/scripts/prove.py``` onto the file allocated in Line 1.
+
+What follows is the original Readme from ```mynlp/ccg2lambda```.
 
 ## Installation
 
